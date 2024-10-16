@@ -6504,8 +6504,8 @@
 
                                   
 <div class="container" style="position: relative; width: 100%;">
-  <div class="row " >
-      <div class="owl-carousel" id="owl-carousel-1" style="padding-left: 20px; padding-right: 20px;">
+  <div class="row " style="padding-left: 20px; padding-right: 20px;">
+      <div class="owl-carousel owl-theme" id="owl-carousel-1" style="">
           <div class="">
               <img src="./banner_home_1.png" alt="">
           </div>
@@ -7030,7 +7030,9 @@ crossorigin="anonymous"></script>
       loop: true,
       autoplay: true,
       autoplayTimeout: 2000,
-      autoplayHoverPause: false,
+      autoplayHoverPause: true,
+      nav: false,
+      dots: false,
       margin: 10,
       responsive: {
           0: {
