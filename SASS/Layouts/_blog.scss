@@ -1,0 +1,101 @@
+.blog {
+    @extend %padding;
+    .blog__top {
+        @include title($mg-12);
+    }
+    .blog__content {
+        .blog__left {
+            padding: 0 $mg-3;
+            .blog__img {
+                position: relative;
+                img {
+                    width: $width-0;
+                }
+                .info {
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    background-color: $color-black-4;
+                    padding: $pd-1;
+                    width: 100%;
+                    color: $color-white;
+                }
+            }
+        }
+        .blog__right {
+            padding: 0 $mg-3;
+            .blog__item {
+                padding: $pd-4 0;
+                ul {
+                    list-style: none;
+                    margin-bottom: $mg-6;
+                    letter-spacing: $letter-spacing-3;
+                    li {
+                        margin-right: $mg-6;
+                        display: inline-block;
+                        a {
+                            color: $color-gray-7;
+                            font-size: $fs-0 - 1;
+                            text-transform: uppercase;
+                            &:hover {
+                                color: $color-yellow-0;
+                            }
+                        }
+                    }
+                }
+                h4 {
+                    margin-bottom: $mg-6;
+                    letter-spacing: $letter-spacing-3;
+                    text-transform: uppercase;
+                    font-weight: $fw-0;
+                    line-height: $line-height-1;
+                    font-size: $fs-2;
+                    a {
+                        color: $color-black-1;
+                        &:hover {
+                            color: $color-yellow-0;
+                        }
+                    }
+                }
+                .date {
+                    font-size: $fs-0 - 1;
+                    color: $color-gray-7;
+                    margin-bottom: $mg-1;
+                    letter-spacing: $letter-spacing-2;
+                    a {
+                        color: $color-gray-7;
+                        text-transform: uppercase;
+                        background-color: transparent;
+                        padding-right: $pd-1;
+                        margin-right: $mg-6;
+                        border-right: 1px solid $color-gray-7;
+                        &:hover {
+                            color: $color-yellow-0;
+                            border-color: $color-yellow-0;
+                        }
+                    }
+                }
+                p {
+                    font-size: $fs-1;
+                    line-height: $line-height-4;
+                    color: $color-gray-0;
+                    margin-bottom: $mg-3;
+                    font-weight: $fw-2;
+                }
+                .read {
+                    text-transform: uppercase;
+                    color: $color-gray-8;
+                    transition: all 0.3s;
+                    letter-spacing: $letter-spacing-3;
+                    i {
+                        margin-left: $mg-6;
+                    }
+                    &:hover {
+                        color: $color-black-3;
+                    }
+                }
+            }
+        }
+    }
+    
+}

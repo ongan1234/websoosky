@@ -1,0 +1,32 @@
+.factor {
+    @extend %padding;
+    background-color: $color-black-6;
+    color: $color-white;
+    text-align: center;
+    .factor__content {
+        .factor__icon {
+            font-size: $fs-6;
+            font-weight: $fw-0;
+            line-height: $line-height-1;
+            margin-bottom: $mg-6;
+            i {
+                margin-right: $mg-6;
+            }
+        }
+        .factor__item {
+            font-size: $fs-1;
+            letter-spacing: $letter-spacing-3;
+        }
+    }
+    @include responsive("medium") {
+        .factor__content {
+            padding-top: $pd-4;
+            padding-bottom: $pd-4;
+            .factor__icon {
+                span {
+                    font-size: $fs-4 + 2;
+                }
+            }
+        }
+    }
+}

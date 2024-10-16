@@ -1,0 +1,8 @@
+.clients {
+    @extend %padding;
+    .clients__content {
+        .item {
+            margin: $mg-2;
+        }
+    }
+}

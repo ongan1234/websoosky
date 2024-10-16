@@ -1,0 +1,82 @@
+footer {
+    @extend %padding;
+    background-color: $color-black-3;
+    color: $color-gray-0;
+    line-height: $line-height-4;
+    .item__1 {
+        p {
+            margin-bottom: $mg-3;
+        }
+    }
+    .item__2 {
+        h5 {
+            letter-spacing: $letter-spacing-3;
+            color: $color-white;
+            text-transform: uppercase;
+            font-size: $fs-0 + 1;
+            margin-bottom: $mg-3;
+        }
+        .list {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            li {
+                border-bottom: 1px solid $color-black-1;
+                a {
+                    color: $color-gray-10;
+                    line-height: $line-height-6;
+                    background-color: transparent;
+                    i {
+                        margin-right: $mg-10;
+                        font-size: $fs-0;
+                    }
+                }
+            }
+        }
+    }
+    .item__3 {
+        h5 {
+            letter-spacing: $letter-spacing-3;
+            color: $color-white;
+            text-transform: uppercase;
+            font-size: $fs-0 + 1;
+            margin-bottom: $mg-3;
+        }
+        .work {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            li {
+                display: inline-block;
+                a {
+                    display: block;
+                    margin-right: $mg-6;
+                    margin-bottom: $mg-6;
+                    width: $width-15;
+                    height: $height-9;
+                    img {
+                        width: 100%;
+                        height: auto;
+                    }
+                }
+            }
+        }
+    }
+    @include responsive("medium") {
+        .container {
+            max-width: 767px;
+        }
+        .item__1 {
+            a {
+                display: inline-block;
+                margin-bottom: $mg-2;
+            }
+            p {
+                margin-bottom: $mg-3;
+            }
+        }
+        .item__2 {
+            margin-bottom: $mg-3;
+        }
+    }
+}

@@ -1,0 +1,47 @@
+.parallax {
+    @include background-image($img-2);
+    @extend %padding;
+    
+    .parallax__content {
+        span {
+            display: block;
+            font-size: $fs-1 + 1;
+            letter-spacing: $letter-spacing-4;
+            color: $color-yellow-0;
+            font-weight: $fw-2;
+            line-height: $line-height-1;
+        }
+        h1 {
+            letter-spacing: $letter-spacing-2;
+            font-weight: $fw-0;
+            margin-bottom: 0;
+            color: $color-white;
+            font-size: $fs-6;
+            line-height: $line-height-1;
+        }
+        a {
+            margin-top: $mg-0;
+            display: inline-block;
+            @include button($color-yellow-0, $color-white, $color-black-3);
+            color: $color-white;
+            line-height: $line-height-1;
+            text-decoration: none;
+            margin-right: $mg-2;
+        }
+    }
+    @include responsive("medium") {
+        .parallax__content {
+            h1 {
+                font-size: $fs-4 + 2;
+            }
+            a {
+                font-size: $fs-0 - 1;
+            }
+        }
+    }
+    @include responsive("small") {
+        .container {
+            padding: 0;
+        }
+    }
+}

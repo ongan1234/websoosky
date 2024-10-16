@@ -1,0 +1,42 @@
+.banner {
+    background-image: url(../../IMG/index-banner-2.jpg);
+    height: $height-1;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    .banner__content {
+        position: absolute;
+        top: $top-1;
+        left: $left-1;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        h1 {
+            color: $color-white;
+            font-size: $fs-7;
+            font-weight: $fw-1;
+            line-height: $line-height-0;
+            letter-spacing: $letter-spacing-0 - 1;
+        }
+        h3 {
+            color: $color-white;
+            font-size: $fs-3;
+            font-weight: $fw-0;
+            line-height: $line-height-1;
+            letter-spacing: $letter-spacing-0;
+        }
+    }
+
+    @include responsive("medium") {
+        .banner__content {
+            width: $width-0;
+            margin: 0;
+            h1 {
+                font-size: $fs-5;
+            }
+            h3 {
+                font-size: $fs-2;
+            }
+        }
+    }
+}

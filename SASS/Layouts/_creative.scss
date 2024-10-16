@@ -1,0 +1,112 @@
+.creative {
+    @extend %padding;
+    padding-bottom: 0;
+    text-align: center;
+    .creative__top {
+        @include title($mg-9);
+    }
+    .creative__filter {
+        .creative__nav {
+            
+            .creative__item {
+                list-style: none;
+                display: inline-block;
+                line-height: $line-height-7;
+                .creative__link {
+                    margin: 0 $mg-10;
+                    text-decoration: none;
+                    color: $color-gray-2;
+                    font-size: $fs-1 - 1;
+                    letter-spacing: $letter-spacing-4;
+                    transition: all 0.3s;
+                    background-color: transparent;
+                    &.active {
+                        color: $color-black-3;
+                    }
+                    &:hover {
+                        color: $color-black-3;
+                    }
+                }
+            }
+        }
+    }
+    .creative__portfolio {
+        margin-top: $mg-0;
+        .portfolio__item {
+            width: $width-10;
+            padding: 0;
+            position: relative;
+            .portfolio__img {
+                width: $width-0;
+            }
+            .protfolio__hover {
+                position: absolute;
+                @extend %hover;
+                i {
+                    position: absolute;
+                    color: $color-black-3;
+                    font-size: $fs-5;
+                    top: 30%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                }
+                .protfolio__text {
+                    position: absolute;
+                    top: 65%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    width: $width-0;
+                    h4 {
+                        font-size: $mg-10 - 1;
+                        letter-spacing: $letter-spacing-5;
+                        color: $color-black-3;
+                    }
+                    p {
+                        font-size: $fs-0 - 1;
+                        letter-spacing: $letter-spacing-4;
+                        color: $color-gray-6;
+                    }
+                }
+                opacity: 0;
+                &:hover {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+    @include responsive("large") {
+        .creative__portfolio {
+            .portfolio__item {
+                .protfolio__hover {
+                    .protfolio__text {
+                        top: 75%;
+                    }
+                }
+            }
+        }
+    }
+    @include responsive("medium") {
+        .creative__portfolio {
+            .portfolio__item {
+                width: 50%;
+                .protfolio__hover {
+                    .protfolio__text {
+                        top: 65%;
+                    }
+                }
+            }
+        }
+    }
+    @include responsive("small") {
+        .creative__portfolio {
+            .portfolio__item {
+                width: 100%;
+                .protfolio__hover {
+                    .protfolio__text {
+                        top: 65%;
+                    }
+                }
+            }
+        }
+    }
+}

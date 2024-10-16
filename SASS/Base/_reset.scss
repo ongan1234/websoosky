@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Source Sans Pro', sans-serif;
+    color: $color-black-2;
+    font-size: $fs-1;
+    font-weight: $fw-2;
+    line-height: $line-height-1;
+    overflow-x: hidden;
+}
+
+a:hover{
+    text-decoration: none;
+}
+
+.padding-0-30{
+    padding: 0 30px;
+}

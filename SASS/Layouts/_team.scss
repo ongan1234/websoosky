@@ -1,0 +1,157 @@
+.team {
+    @extend %padding;
+    text-align: center;
+    .team__top {
+        @include title($mg-9);
+    }
+    .team__content {
+        .team__member {
+            width: $width-13;
+            padding: $pd-4;
+            .team__img {
+                position: relative;
+                img {
+                    width: 100%;
+                }
+                .team__intro {
+                    position: absolute;
+                    right: 0;
+                    bottom: $bottom-2;
+                    width: $width-12;
+                    background-color: $color-black-4;
+                    padding: $pd-1 $pd-7;
+                    text-align: right;
+                    letter-spacing: $letter-spacing-2;
+                    text-transform: uppercase;
+                }
+                h5 {
+                    color: $color-white;
+                    margin-bottom: 0;
+                    font-size: $fs-0 + 1;
+                    font-weight: $fw-0;
+                    line-height: $line-height-1;
+                }
+                span {
+                    color: $color-white-2;
+                    font-size: $fs-0 - 1;
+                }
+                .team__hover {
+                    position: absolute;
+                    @extend %hover;
+                    opacity: 0;
+                    transition: all 0.3s;
+                    .text {
+                        position: absolute;
+                        top: $top-4;
+                        font-weight: $fw-0;
+                        font-size: $fs-0 + 1;
+                        padding: 0 $pd-7;
+                        h4 {
+                            font-size: $fs-0 + 1;
+                            margin-bottom: $mg-1;
+                            letter-spacing: $letter-spacing-5;
+                            text-transform: uppercase;
+                            line-height: $line-height-1;
+                            color: $color-black-3;
+                        }
+                        p {
+                            color: $color-gray-0;
+                            margin-bottom: 0;
+                            line-height: $line-height-4;
+                        }
+                    }
+                    .icon {
+                        position: absolute;
+                        bottom: 10%;
+                        left: 50%;
+                        transform: translate(-50%);
+                        i {
+                            font-size: $fs-1 + 1;
+                            color: $color-black-3;
+                            margin: 0 $mg-6;
+                            text-align: center;
+                            &:hover {
+                                color: $color-yellow-0;
+                            }
+                        }
+                    }
+                    &:hover {
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+    }
+    .team__promo {
+        background-color: $color-white-3;
+        margin: 0 $mg-10;
+        margin-top: $mg-12;
+        .promo__content {
+            padding: $pd-8 $pd-9;
+            justify-content: space-between;
+            .promo__info {
+                text-align: left;
+                h4 {
+                    margin-bottom: 0;
+                    letter-spacing: $letter-spacing-3;
+                    font-size: $fs-2;
+                    span {
+                        color: $color-yellow-0;
+                    }
+                }
+                .text {
+                    display: block;
+                    color: $color-gray-0;
+                    font-size: $fs-1;
+                    margin-top: $mg-6;
+                }
+            }
+            .promo__btn {
+                a {
+                    @include button($color-black-3, $color-yellow-0, $color-white);
+                    text-decoration: none;
+                    color: $color-white;
+                }
+            }
+        }
+    }
+    @include responsive("large") {
+        .team__content {
+            .team__member {
+                width: $width-0;
+                padding: 0 $pd-4;
+            }
+        }
+    }
+    @include responsive("medium") {
+        .container {
+            max-width: 720px;
+            .team__content {
+                .team__member {
+                    width: $width-0;
+                    padding: 0 $pd-4;
+                }
+            }
+        }
+    }
+    @include responsive("small") {
+        .container {
+            .team__content {
+                .team__member {
+                    width: $width-0;
+                    padding: 0 $pd-12;
+                }
+            }
+        }
+        .team__promo {
+            .promo__content {
+                justify-content: start;
+                .promo__btn {
+                    max-width: 170px;
+                    padding: 0;
+                    margin-top: $mg-3;
+                }
+            }
+        }
+    }
+}

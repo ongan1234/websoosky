@@ -1,0 +1,84 @@
+.tabs {
+    background-image: $img-3;
+    @extend %padding;
+    .tabs__nav {
+        margin-top: 4%;
+        ul {
+            list-style: none;
+            margin: 0;
+            li {
+                display: inline-block;
+                padding: $pd-11 $pd-10;
+                background-color: $color-black-5;
+                margin-right: $mg-2;
+                text-align: center;
+                position: relative;
+                &::before {
+                    @extend %before;
+                    opacity: 0;
+                }
+                &.active {
+                    background-color: $color-white;
+                    &::before {
+                        opacity: 1;
+                    }
+                }
+                &:hover {
+                    background-color: $color-white;
+                    &::before {
+                        opacity: 1;
+                    }
+                }
+                a {
+                    display: inline-block;
+                    font-size: $fs-6;
+                    color: $color-black-1;
+                    width: $width-11 + 1;
+                    height: $width-11 + 1;
+                    text-align: center;
+                    line-height: $line-height-8;
+                }
+            }
+        }
+    }
+    .tabs__content {
+        margin-top: 6%;
+        padding: $pd-4 0;
+        span {
+            letter-spacing: $letter-spacing-2;
+            font-size: $fs-0 + 1;
+            color: $color-gray-0;
+            line-height: $line-height-4;
+        }
+        h2 {
+            margin-bottom: $mg-0;
+            font-weight: $fw-0;
+            letter-spacing: $letter-spacing-2;
+            font-size: $fs-5;
+        }
+        p {
+            line-height: $line-height-4;
+        }
+    }
+    @include responsive("medium") {
+        .container {
+            max-width: 767px;
+            padding: 0 $pd-4;
+            .tabs__nav {
+                ul {
+                    li {
+                        display: block;
+                        margin: 0;
+                        margin-bottom: 10px;
+                    }
+                }
+            }
+            .tabs__content {
+                margin-top: 0;
+                h2 {
+                    font-size: $fs-3;
+                }
+            }
+        }
+    }
+}

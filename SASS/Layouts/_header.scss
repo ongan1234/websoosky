@@ -1,0 +1,110 @@
+header {
+    background-color: none;
+    position: absolute;
+    top: $top-0;
+    width: $width-0;
+    height: $height-0;
+    z-index: 2;
+    .navMassive {
+        padding: 0 $pd-4;
+        height: 100%;
+        .navbar-collapse {
+            .nav-item {
+                a {
+                    color: $color-white;
+                    font-size: $fs-0;
+                    padding: 0 $pd-2;
+                    margin: 0;
+                    text-transform: uppercase;
+                    letter-spacing: $letter-spacing-1;
+                }
+                &:hover {
+                    a {
+                        color: $color-yellow-0;
+                    }
+                }
+            }
+            .nav-item.active {
+                a {
+                    color: $color-yellow-0;
+                }
+            }
+        }
+    }
+    .navbar-toggler {
+        color: $color-white;
+        &:focus {
+            outline: none;
+        }
+    }
+
+    @include responsive("large") {
+        .navMassive {
+            position: relative;
+            #navbarMassive {
+                position: absolute;
+                top: $top-5;
+                right: $right-3;
+                left: $left-4;
+            }
+        }
+    }
+
+    @include responsive("medium") {
+        background-color: #101010;
+        height: $height-10;
+        .navMassive {
+            &>a {
+                margin-right: $mg-3;
+                font-weight: $fw-4;
+                img {
+                    width: 62px;
+                    height: 60px;
+                }
+            }
+            #navbarMassive,#navbarMassive-top {
+                top: 60px;
+                ul {
+                    li {
+                        a {
+                            display: block;
+                            background-color: $color-white;
+                            color: $color-black-1;
+                            padding: $pd-3;
+                            padding-left: $pd-4;
+                        }
+                    }
+                    .display-n {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+#headerFixed {
+    background-color: #101010;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    transform: translateY(-60px);
+    height: $height-10;
+    transition: all 0s;
+    z-index: 4;
+    .navMassive {
+        &>a {
+            margin-right: $mg-3;
+            font-weight: $fw-4;
+            img {
+                width: 62px;
+                height: 60px;
+            }
+        }
+    }
+    @include responsive("small") {
+        max-width: 424px;
+    }
+}
+
+

@@ -1,0 +1,68 @@
+.start {
+    @extend %padding;
+    .start__content {
+        .start__top {
+            @include title($mg-8);
+        }
+        .start__bottom {
+            .start__item {
+                padding-left: $pd-4;
+                padding-right: $pd-4;
+                .start__border {
+                    position: relative;
+                    padding: $pd-4;
+                    text-align: left;
+                    border: 1px solid $color-gray-4;
+                    .start__icon {
+                        position: absolute;
+                        top: $top-2;
+                        left: $left-2;
+                        width: $width-3;
+                        height: $height-3;
+                        background-color: $color-black-2;
+                        border-radius: $border-radius-1;
+                        text-align: center;
+                        box-shadow: $box-shadow-0;
+                        transition: all 0.5s;
+                        i {
+                            font-size: $fs-5;
+                            color: $color-white;
+                            line-height: $line-height-3;
+                        }
+                        &:hover {
+                            background-color: $color-yellow-0;
+                        }
+                    }
+                    h4 {
+                        margin-top: $mg-3;
+                        margin-bottom: $mg-2;
+                        font-size: $fs-2;
+                        font-weight: $fw-0;
+                        line-height: $line-height-1;
+                        letter-spacing: $letter-spacing-3;
+                    }
+                    p {
+                        color: $color-gray-0;
+                        margin-bottom: 0;
+                    }
+                }
+            }
+        }
+    }
+
+    @include responsive("medium") {
+        .container {
+            max-width: 720px;
+            .start__content {
+                .start__bottom {
+                    .start__item {
+                        .start__border {
+                            margin-bottom: $mg-7;
+                        }
+                    }
+                }
+            }
+        }
+        
+    }
+}

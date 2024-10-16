@@ -1,0 +1,90 @@
+.page {
+    @include background-image($img-1);
+    @extend %padding;
+    position: relative;
+    .overlay {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: $width-4;
+        height: $height-5;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+    .page__content {
+        color: $color-white;
+        .page__left {
+            display: table;
+            width: $width-0;
+            height: $height-4;
+            vertical-align: middle;
+            padding: 0 $pd-4;
+            
+            h3 {
+                display: table-cell;
+                text-align: center;
+                vertical-align: middle;
+                letter-spacing: $letter-spacing-0;
+                font-weight: $fw-0;
+                font-size: $fs-4;
+            }
+        }
+        .page__right {
+            padding: 0 $pd-5;
+            h4 {
+                font-size: $fs-2;
+                margin-bottom: $mg-3;
+                letter-spacing: $letter-spacing-2;
+            }
+            p {
+                margin-bottom: $mg-3;
+                line-height: $line-height-4;
+            }
+            .page__item {
+                padding-top: $pd-4;
+                .page__progress:first-child {
+                    @extend %progress;
+                    .progress__bar {
+                        @include progress__bar($width-5);
+                        span {
+                            @extend %span;
+                        }
+                    }
+                }
+                .page__progress:nth-child(2) {
+                    @extend %progress;
+                    .progress__bar {
+                        @include progress__bar($width-8);
+                        span {
+                            @extend %span;
+                        }
+                    }
+                }
+                .page__progress:last-child {
+                    @extend %progress;
+                    .progress__bar {
+                        @include progress__bar($width-9);
+                        span {
+                            @extend %span;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @include responsive("medium") {
+        .overlay {
+            display: none;
+        }
+        .page__content {
+            max-width: 720px;
+            .page__left {
+                h3 {
+                    font-size: $fs-1;
+                }
+            }
+            .page__right {
+                padding: $pd-12;
+            }
+        }
+    }
+}

@@ -1,0 +1,81 @@
+%after {
+    position: absolute;
+    content: "";
+    bottom: $bottom-0;
+    left: $left-1;
+    width: $width-3;
+    height: $height-2;
+    margin-left: $mg-5;
+    background-color: $color-gray-3;
+}
+
+%before {
+    position: absolute;
+    bottom: $bottom-3;
+    left: $left-1;
+    width: 0;
+    height: 0;
+    margin-left: $mg-13;
+    content: "";
+    border-width: 10px 10px 0 10px;
+    border-style: solid;
+    border-color: $color-white transparent transparent transparent;
+}
+
+%padding {
+    padding-top: $pd-6;
+    padding-bottom: $pd-6;
+    @include responsive("medium") {
+        padding-top: $pd-12;
+        padding-bottom: $pd-12;
+    }
+}
+
+%progress {
+    overflow: visible;
+    height: $height-6;
+    margin-top: $mg-6;
+    margin-bottom: $mg-7;
+    letter-spacing: $letter-spacing-3;
+    background: $color-gray-5;
+    box-shadow: none;
+}
+
+%span {
+    position: absolute;
+    top: $top-3;
+    right: $right-0;
+    display: inline-block;
+    min-width: $width-6;
+    height: $height-6;
+    padding: 0 $pd-1 - 2px;
+    text-align: center;
+    letter-spacing: 0;
+    border-radius: $border-radius-2;
+    line-height: $line-height-5;
+    background-color: $color-gray-1;
+    color: $color-black-3;
+    &::after {
+        content: "";
+        position: absolute;
+        display: block;
+        bottom: $bottom-0;
+        left: $left-3;
+        width: $width-7;
+        height: $height-7;
+        background-color: $color-white;
+        transform: rotate(45deg);
+        background-color: $color-gray-1;
+    }
+}
+
+%hover {
+    top: $top-0;
+    right: $right-1;
+    left: $left-0;
+    bottom: $bottom-1;
+    border: $border-0;
+    background-color: $color-white-1;
+    transition: all 0.3s;
+    text-align: center;
+}
