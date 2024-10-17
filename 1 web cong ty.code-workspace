@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../Massive-Home-master"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "1 web cong ty"
+	}
+}
