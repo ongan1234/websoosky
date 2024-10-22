@@ -65,18 +65,51 @@ height: 48px;
 
 .product_content {
     color: var(--text, #10153E);
-                  text-align: center;
-                  font-family: Roboto;
-                  font-size: 24px;
-                  font-style: normal;
-                  font-weight: 400;
-                  line-height: normal;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.footer_logo {
+    width: 25%; 
+    text-align: center;
 }
 
 .logo_footer {
     width: 204.946px;
     height: 176px;
 }
+
+.footer_list {
+    width: 25%; 
+    text-align: left;
+    border-right: 0.5px solid var(--Color, #51E1FF);
+    border-left: 0.5px solid var(--Color, #51E1FF);
+}
+
+.footer_location {
+    width: 50%; 
+    text-align: left;
+    padding-left: 87px;
+}
+
+.footer_link {
+color: #FFF;
+font-family: Roboto;
+font-size: 20.735px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+margin-top: 35px;
+margin-bottom: 35px;
+}
+
+/* .vn_office {
+    width: 507px;
+} */
 
 @media (max-width: 768px) {
     .logo_header {
@@ -141,6 +174,18 @@ line-height: normal;
     .logo_footer {
         width: 81.978px;
 height: 70.401px;
+    }
+
+    .footer_logo {
+        width: 100%;
+    }
+
+    .footer_list {
+        width: 100%;
+    }
+
+    .footer_location {
+        width: 100%;
     }
 }
 
