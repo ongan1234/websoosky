@@ -180,12 +180,8 @@ height: 70.401px;
         width: 100%;
     }
 
-    .footer_list {
-        width: 100%;
-    }
-
-    .footer_location {
-        width: 100%;
+    .information-footer {
+        text-align: center;
     }
 }
 
@@ -247,5 +243,9 @@ height: 70.401px;
     .logo_footer {
         width: 165.453px;
         height: 148.614px;
+    }
+
+    .information-footer {
+        text-align: center;
     }
 }
