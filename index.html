@@ -155,6 +155,8 @@
     }
   </style>
   <script src="./wow.min.js"></script>
+  <link rel="stylesheet" href="./CSS/owl.carousel.min.css">
+  <link rel="stylesheet" href="./CSS/owlcarousel/owl.theme.default.min.css">
   <style>
     @import"https://fonts.googleapis.com/css2?family=Inter&display=swap";
 
@@ -6493,7 +6495,7 @@
                                 <p class="title_text font_Roboto">Creating engaging mobile apps & games that delight millions.</p>
 
 
-                                <div class=" p-0" style="position: relative; width: 100%;">
+                                <div class="container-fluid p-0" style="position: relative; width: 100%;">
                                   <div class="row " style="padding-left: 20px; padding-right: 20px;">
                                     <div class="owl-carousel owl-theme" id="owl-carousel-1" style="">
                                       <div class="">
@@ -6904,6 +6906,8 @@
   <div id="fb-root"></div>
   <!-- <script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&amp;version=v14.0" nonce="NPnX51AP"></script> -->
 
+<script src="./JS/jquery-3.7.1.min.js"></script>
+
   <script>
     function toggleMenu() {
     var slideMenu = document.getElementById("slideMenu");
@@ -7049,12 +7053,13 @@
     nav: false,
     dots: false,
     margin: 10,
+    responsiveClass: true,
     responsive: {
       0: {
         items: 1
       },
       576: {
-        items: 3
+        items: 1
       },
       1200: {
         items: 5
@@ -7065,28 +7070,26 @@
   </script>
 
   <script>
-   $(document).ready(function(){
-  $('#owl-carousel-2').owlCarousel({
-    loop: true,
-    autoplay: true,
-    autoplayTimeout: 2000,
-    autoplayHoverPause: true,
-    nav: false,
-    dots: false,
-    margin: 10,
-    responsive: {
-      0: {
-        items: 1
-      },
-      576: {
-        items: 3
-      },
-      1200: {
-        items: 5
+$('#owl-carousel-2').owlCarousel({
+      loop: true,
+      autoplay: true,
+      autoplayTimeout: 2000,
+      autoplayHoverPause: true,
+      nav: false,
+      dots: false,
+      margin: 10,
+      responsive: {
+        0: {
+          items: 1
+        },
+        576: {
+          items: 3
+        },
+        1200: {
+          items: 5
+        }
       }
-    }
-  });
-});
+      });
   </script>
   <script>
     function scrollToTop() {
