@@ -6518,7 +6518,7 @@
             <nav class="slide_menu" id="slideMenu">
               <ul class="menu_h">
                 <li class="menu_item">
-                  <a class="active" href="./">Home</a>
+                  <a href="./">Home</a>
                 </li>
                 <li class="menu_item">
                   <a href="./about-us.html">About Us</a>
@@ -7220,6 +7220,13 @@
       console.error("Error sending email:", error);
     });
   }
+</script>
+
+<script>
+  function toggleMenu() {
+  var slideMenu = document.getElementById("slideMenu");
+  slideMenu.classList.toggle("active");
+}
 </script>
 
   </body>
