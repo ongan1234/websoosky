@@ -1,4 +1,28 @@
 .header_web {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #12195E;
+    z-index: 1000; /* Đảm bảo header luôn nằm trên các thành phần khác */
+}
+
+/* Sticky header cho mobile */
+.header_mobile {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #12195E;
+    z-index: 999; /* Đảm bảo header mobile luôn nằm trên các thành phần khác */
+}
+
+/* Đảm bảo nội dung trang không bị che bởi header */
+body {
+    padding-top: 80px; /* Thêm khoảng trống bằng chiều cao của header */
+}
+
+.header_web {
     background: #12195E;
     color: #fff;
 }
@@ -130,7 +154,7 @@
     color: var(--text, #10153E);
     text-align: center;
     font-family: Roboto;
-    font-size: 24px;
+    font-size: 23px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -197,6 +221,10 @@
 } */
 
 @media (max-width: 768px) {
+    body {
+        padding-top: 180px;
+    }
+
     .header_web {
         display: none;
     }
@@ -348,6 +376,10 @@
 }
 
 @media (max-width: 425px) {
+    body {
+        padding-top: 110px;
+    }
+
     .header_web {
         display: none;
     }
@@ -394,6 +426,7 @@
     }
 
     .menu_item a {
+        margin: 0;
         color: #FFF;
         font-family: Roboto;
         font-size: 20.926px;

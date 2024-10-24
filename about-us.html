@@ -6466,7 +6466,7 @@
 
 <body style="background-color: #FAFAFA; background: #FAFAFA;">
   <app-root _nghost-ng-c3558756395="" ng-version="16.2.12">
-    <button _ngcontent-ng-c3558756395="" class="scroll-to-top show-scroll">
+    <button _ngcontent-ng-c3558756395="" class="scroll-to-top show-scroll" onclick="scrollToTop()">
       <span _ngcontent-ng-c3558756395="" class="material-symbols-outlined"> keyboard_double_arrow_up </span>
     </button>
     <header _ngcontent-ng-c3558756395="">
@@ -6490,7 +6490,7 @@
                     <a class="active" href="./about-us.html">About Us</a>
                   </li>
                   <li class="menu_item">
-                    <a href="./products.html">Our Product</a>
+                    <a href="./products.html">Our Products</a>
                   </li>
                   <li class="menu_item">
                     <a href="./careers.html">Careers</a>
@@ -6521,7 +6521,7 @@
                   <a class="active" href="./about-us.html">About Us</a>
                 </li>
                 <li class="menu_item">
-                  <a href="./products.html">Our Product</a>
+                  <a href="./products.html">Our Products</a>
                 </li>
                 <li class="menu_item">
                   <a href="./careers.html">Careers</a>
@@ -7096,7 +7096,7 @@
                   </li>
                   <li _ngcontent-ng-c3324784894="" class="nav-item ng-star-inserted">
                     <a _ngcontent-ng-c3324784894="" class="nav-link ng-star-inserted" rel="dofollow"
-                      href="./products" style="color: #fff;"> Our Products </a>
+                      href="./products" style="color: #fff;"> Our Productss </a>
                     <!---->
                     <!---->
                   </li>
@@ -7327,6 +7327,14 @@
       slideMenu.classList.toggle("active");
   }
     </script>
+    <script>
+      function scrollToTop() {
+          window.scrollTo({
+              top: 0,
+              behavior: 'smooth' // Cuộn mượt mà
+          });
+      }
+  </script>
 
 </body>
 

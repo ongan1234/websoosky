@@ -6454,7 +6454,7 @@
   </head>
   <body style="background-color: #FAFAFA; background: #FAFAFA;">
     <app-root _nghost-ng-c3558756395="" ng-version="16.2.12">
-      <button _ngcontent-ng-c3558756395="" class="scroll-to-top show-scroll">
+      <button _ngcontent-ng-c3558756395="" class="scroll-to-top show-scroll" onclick="scrollToTop()">
         <span _ngcontent-ng-c3558756395="" class="material-symbols-outlined"> keyboard_double_arrow_up </span>
       </button>
       <header class="header_web">
@@ -6477,7 +6477,7 @@
                     <a href="./about-us.html">About Us</a>
                   </li>
                   <li class="menu_item">
-                    <a class="active" href="./products.html">Our Product</a>
+                    <a class="active" href="./products.html">Our Products</a>
                   </li>
                   <li class="menu_item">
                     <a href="./careers.html">Careers</a>
@@ -6508,7 +6508,7 @@
                   <a href="./about-us.html">About Us</a>
                 </li>
                 <li class="menu_item">
-                  <a class="active" href="./products.html">Our Product</a>
+                  <a class="active" href="./products.html">Our Products</a>
                 </li>
                 <li class="menu_item">
                   <a href="./careers.html">Careers</a>
@@ -6567,7 +6567,7 @@
                     <p class=" menu_title" onclick="changeColor(this, 2)">UTILITIES</p>
                 </div>
                 <div class="col">
-                    <p class=" menu_title" onclick="changeColor(this, 3)">ENTERTAIMENT</p>
+                    <p class=" menu_title" onclick="changeColor(this, 3)">entertainment</p>
                 </div>
             </div>
             <div class="row" id="productivity_content" style="width: 100%;">
@@ -6745,7 +6745,7 @@
               </div>
 
             </div>
-            <div class="row" id="product_entertaiment" style="width: 100%;">
+            <div class="row" id="product_entertainment" style="width: 100%;">
 
 
               <div class="col-sm-12 col-md-6 col-lg-6 col-xl-4 " style="padding-left: 60px; padding-right: 60px; padding-top: 32px; padding-bottom: 32px; background: linear-gradient(156deg, #7CD9F6 0%, #0691EF 98.43%);">
@@ -6756,8 +6756,8 @@
                   </svg>
                 </div>
                 <div class="product_img">
-                  <img class="product_img_1" src="./entertaiment_1.png" alt="">
-                  <img class="product_img_2" src="./entertaiment_1s.png" alt="">
+                  <img class="product_img_1" src="./entertainment_1.png" alt="">
+                  <img class="product_img_2" src="./entertainment_1s.png" alt="">
                 </div>
               </div>
 
@@ -6769,8 +6769,8 @@
                   </svg>
                 </div>
                 <div class="product_img">
-                  <img class="product_img_1" src="./entertaiment_2.png" alt="">
-                  <img class="product_img_2" src="./entertaiment_2s.png" alt="">
+                  <img class="product_img_1" src="./entertainment_2.png" alt="">
+                  <img class="product_img_2" src="./entertainment_2s.png" alt="">
                 </div>
               </div>
 
@@ -6782,8 +6782,8 @@
                   </svg>
                 </div>
                 <div class="product_img">
-                  <img class="product_img_1" src="./entertaiment_3.png" alt="">
-                  <img class="product_img_2" src="./entertaiment_3s.png" alt="">
+                  <img class="product_img_1" src="./entertainment_3.png" alt="">
+                  <img class="product_img_2" src="./entertainment_3s.png" alt="">
                 </div>
               </div>
 
@@ -6795,8 +6795,8 @@
                   </svg>
                 </div>
                 <div class="product_img">
-                  <img class="product_img_1" src="./entertaiment_4.png" alt="">
-                  <img class="product_img_2" src="./entertaiment_4s.png" alt="">
+                  <img class="product_img_1" src="./entertainment_4.png" alt="">
+                  <img class="product_img_2" src="./entertainment_4s.png" alt="">
                 </div>
               </div>
 
@@ -6827,7 +6827,7 @@
                       <!---->
                     </li>
                     <li _ngcontent-ng-c3324784894="" class="nav-item ng-star-inserted">
-                      <a _ngcontent-ng-c3324784894="" class="nav-link ng-star-inserted" rel="dofollow" href="./products"style="color: #fff;"> Our Products </a>
+                      <a _ngcontent-ng-c3324784894="" class="nav-link ng-star-inserted" rel="dofollow" href="./products"style="color: #fff;"> Our Productss </a>
                       <!---->
                       <!---->
                     </li>
@@ -7031,11 +7031,11 @@
 <script>
       var productivity_content = document.getElementById("productivity_content");
       var productivity_utilities = document.getElementById("productivity_utilities");
-      var product_entertaiment = document.getElementById("product_entertaiment");
+      var product_entertainment = document.getElementById("product_entertainment");
 
       productivity_content.style.display = "flex";
       productivity_utilities.style.display = "none";
-      product_entertaiment.style.display = "none";
+      product_entertainment.style.display = "none";
 
   function changeColor(element, id) {
       // Loại bỏ lớp "active" khỏi tất cả các phần tử <p>
@@ -7052,15 +7052,15 @@
       if (id == 1) {
         productivity_content.style.display = "flex";
         productivity_utilities.style.display = "none";
-        product_entertaiment.style.display = "none";
+        product_entertainment.style.display = "none";
       } else if (id == 2) {
         productivity_content.style.display = "none";
         productivity_utilities.style.display = "flex";
-        product_entertaiment.style.display = "none";
+        product_entertainment.style.display = "none";
       } else if (id == 3) {
         productivity_content.style.display = "none";
         productivity_utilities.style.display = "none";
-        product_entertaiment.style.display = "flex";
+        product_entertainment.style.display = "flex";
       }
   }
 </script>
@@ -7070,6 +7070,14 @@
   var slideMenu = document.getElementById("slideMenu");
   slideMenu.classList.toggle("active");
 }
+</script>
+<script>
+    function scrollToTop() {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth' // Cuộn mượt mà
+        });
+    }
 </script>
 
   </body>
