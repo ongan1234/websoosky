@@ -1,7 +1,66 @@
+.header_web {
+    background: #12195E;
+    color: #fff;
+}
+
+.header_mobile {
+    background: #12195E;
+    color: #fff;
+}
+
 .logo_header {
     width: 98px;
     height: 63.32px;
     flex-shrink: 0;
+    margin-top: 20.34px;
+    margin-bottom: 20.34px;
+}
+
+.heade {
+    height: 90px;
+}
+
+.headerlogo {
+
+}
+
+.header_logo {
+    text-align: left;
+}
+
+.header_menu {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.menu_list {
+    display: flex;
+    justify-content: flex-end;
+    flex-grow: 1;
+}
+
+.header_mobile {
+    display: none;
+}
+
+.menu_item {
+    list-style: none;
+}
+
+.menu_item a {
+    color: #fff;
+    margin-right: 20px;
+    text-decoration: none;
+    margin-right: 60px;
+}
+
+.menu_item a.active {
+    color: #51E1FF;
+}
+
+.menu_item a:hover {
+    color: #51E1FF;
 }
 
 #home_title {
@@ -17,11 +76,14 @@
 }
 
 .title_text {
-    color: #10153E; text-align: center; font-size: 30px;
+    color: #10153E;
+    text-align: center;
+    font-size: 30px;
     font-family: "Roboto";
     font-style: normal;
     font-weight: 400;
-    line-height: normal; margin-bottom: 213px;
+    line-height: normal;
+    margin-bottom: 213px;
 }
 
 .home_growth {
@@ -36,17 +98,17 @@
 
 .growth_text {
     color: var(--text, #10153E);
-text-align: center;
-font-family: Roboto;
-font-size: 19.959px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
-width: 220.384px;
-margin: auto;
-margin-top: 21px;
-margin-bottom: 31px;
-height: 48px;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 19.959px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 220.384px;
+    margin: auto;
+    margin-top: 21px;
+    margin-bottom: 31px;
+    height: 48px;
 }
 
 .product_1 {
@@ -55,9 +117,10 @@ height: 48px;
 }
 
 .product_2 {
-    width:115px;
+    width: 115px;
     height: 86px;
 }
+
 .product_logo {
     width: 246px;
     height: 166px;
@@ -74,7 +137,7 @@ height: 48px;
 }
 
 .footer_logo {
-    width: 25%; 
+    width: 25%;
     text-align: center;
 }
 
@@ -84,27 +147,49 @@ height: 48px;
 }
 
 .footer_list {
-    width: 25%; 
+    width: 25%;
     text-align: left;
     border-right: 0.5px solid var(--Color, #51E1FF);
     border-left: 0.5px solid var(--Color, #51E1FF);
 }
 
 .footer_location {
-    width: 50%; 
+    width: 50%;
     text-align: left;
     padding-left: 87px;
 }
 
 .footer_link {
-color: #FFF;
-font-family: Roboto;
-font-size: 20.735px;
-font-style: normal;
-font-weight: 500;
-line-height: normal;
-margin-top: 35px;
-margin-bottom: 35px;
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 20.735px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-top: 35px;
+    margin-bottom: 35px;
+}
+
+.about_web {
+    display: flex;
+}
+
+.about_mobile {
+    display: none;
+}
+
+.contact_title {
+    color: #10153E;
+    font-family: Roboto Condensed;
+    font-size: 75px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    text-align: center;
+    margin-bottom: 200px;
+    margin-top: 134px;
+    padding-left: 10%;
+    padding-right: 10%;
 }
 
 /* .vn_office {
@@ -112,26 +197,94 @@ margin-bottom: 35px;
 } */
 
 @media (max-width: 768px) {
+    .header_web {
+        display: none;
+    }
+
+    .header_mobile {
+        display: flex;
+    }
+
+    .logo_head {
+        width: 100%;
+    }
+
+    .slide_menu {
+        position: absolute;
+        background: #12195E;
+        color: #fff;
+        width: 517px;
+        z-index: 10;
+        top: 0;
+        padding-top: 90px;
+        left: -100%;
+        transition: left 0.3s ease;
+        height: 100vh;
+    }
+
+    .slide_menu.active {
+        left: 0; /* Đẩy menu sang phải để hiển thị */
+    }
+    .menu_h {
+        padding: 0;
+    }
+
+    .menu_item {
+        padding-left: 100px;
+        padding-right: 100px;
+        text-align: left;
+        padding-top: 34px;
+        padding-bottom: 34px;
+    }
+
+    .menu_item a {
+        color: #FFF;
+        font-family: Roboto;
+        font-size: 45px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+
+    .menu_item a.active {
+        padding-left: 19px;
+        border-left: 6px solid #fff;
+        color: #fff;
+    }
+
+    .headerlogo {
+        text-align: center;
+        position: relative;
+    }
+
+    .header_list {
+        position: absolute;
+        z-index: 100;
+        left: 60;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
     .logo_header {
-        width: 39.2px;
-        height: 25.329px;
+        width: 98.2px;
+        height: 63.329px;
         flex-shrink: 0;
         margin-top: 8.14px;
         margin-bottom: 8.14px;
     }
-    
+
     #home_title {
         font-size: 31.962px;
         margin-top: 86.4px;
     }
 
-    .title_text { 
-        color: #10153E; 
-        text-align: center; 
+    .title_text {
+        color: #10153E;
+        text-align: center;
         font-size: 12px;
         font-style: normal;
         font-weight: 400;
-        line-height: normal; 
+        line-height: normal;
         margin-bottom: 213px;
         margin-left: auto;
         margin-right: auto;
@@ -139,33 +292,34 @@ margin-bottom: 35px;
 
     .home_growth {
         color: var(--text, #10153E);
-text-align: center;
-font-family: Roboto;
-font-size: 50px;
-font-style: normal;
-font-weight: 700;
-line-height: normal;
+        text-align: center;
+        font-family: Roboto;
+        font-size: 50px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
     }
 
     .product_content {
         color: var(--text, #10153E);
-                  text-align: center;
-                  font-family: Roboto;
-                  font-size: 9.6px;
-                  font-style: normal;
-                  font-weight: 400;
-                  line-height: normal;
+        text-align: center;
+        font-family: Roboto;
+        font-size: 9.6px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
     }
 
     .product_1 {
         width: 68.373px;
         height: 69.728px;
     }
-    
+
     .product_2 {
         width: 76.685px;
         height: 57.305px;
     }
+
     .product_logo {
         width: 243.638px;
         height: 157.421px;
@@ -173,7 +327,7 @@ line-height: normal;
 
     .logo_footer {
         width: 81.978px;
-height: 70.401px;
+        height: 70.401px;
     }
 
     .footer_logo {
@@ -183,9 +337,98 @@ height: 70.401px;
     .information-footer {
         text-align: center;
     }
+
+    .about_web {
+        display: none;
+    }
+
+    .about_mobile {
+        display: flex;
+    }
 }
 
 @media (max-width: 425px) {
+    .header_web {
+        display: none;
+    }
+
+    .logo_head {
+        width: 100%;
+    }
+
+    .heade {
+        height: 51.28px;
+    }
+
+    .header_list {
+        width: 21.6px;
+        height: 14.4px;
+    }
+
+    .slide_menu {
+        position: absolute;
+        background: #12195E;
+        color: #fff;
+        width: 286.377px;
+        z-index: 10;
+        top: 0;
+        padding-top: 51.28px;
+        left: -100%;
+        transition: left 0.3s ease;
+        height: 100vh;
+    }
+
+    .slide_menu.active {
+        left: 0; /* Đẩy menu sang phải để hiển thị */
+    }
+    .menu_h {
+        padding: 0;
+    }
+
+    .menu_item {
+        padding-left: 55px;
+        padding-right: 55px;
+        text-align: left;
+        padding-top: 19px;
+        padding-bottom: 19px;
+    }
+
+    .menu_item a {
+        color: #FFF;
+        font-family: Roboto;
+        font-size: 20.926px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+
+    .menu_item a.active {
+        padding-left: 10px;
+        border-left: 3px solid #fff;
+        color: #fff;
+    }
+
+    .headerlogo {
+        text-align: center;
+        position: relative;
+    }
+
+    .header_list {
+        position: absolute;
+        z-index: 100;
+        left: 60;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .logo_header {
+        width: 98.2px;
+        height: 63.329px;
+        flex-shrink: 0;
+        margin-top: 8.14px;
+        margin-bottom: 8.14px;
+    }
+
     .logo_header {
         width: 54.229px;
         height: 35.038px;
@@ -204,40 +447,40 @@ height: 70.401px;
         margin-right: auto;
     }
 
-   .title_text { 
-    color: #10153E; 
-    text-align: center;
-    width: 302.131px;
-    font-size: 17.707px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal; 
-    margin-bottom: 213px;
-   }
+    .title_text {
+        color: #10153E;
+        text-align: center;
+        width: 302.131px;
+        font-size: 17.707px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        margin-bottom: 213px;
+    }
 
-   .home_growth {
-    color: var(--text, #10153E);
-    text-align: center;
-    font-family: Roboto;
-    font-size: 27.668px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-   }
+    .home_growth {
+        color: var(--text, #10153E);
+        text-align: center;
+        font-family: Roboto;
+        font-size: 27.668px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
 
-   .product_content {
-                color: var(--text, #10153E);
-              text-align: center;
-              font-family: Roboto;
-              font-size: 9.6px;
-              font-style: normal;
-              font-weight: 400;
-              line-height: normal;
+    .product_content {
+        color: var(--text, #10153E);
+        text-align: center;
+        font-family: Roboto;
+        font-size: 9.6px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
     }
 
     .product_logo {
-    width: 134.818px!important;
-    height: 87.109px!important;
+        width: 134.818px !important;
+        height: 87.109px !important;
     }
 
     .logo_footer {
@@ -247,5 +490,496 @@ height: 70.401px;
 
     .information-footer {
         text-align: center;
+    }
+
+    .about_web {
+        display: none;
+    }
+
+    .about_mobile {
+        display: flex;
+    }
+}
+
+
+/* abuot-us */
+.about_title {
+    color: #10153E;
+    font-size: 65px;
+    font-family: Roboto Condensed;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    text-align: left;
+    margin-bottom: 0;
+    margin-top: 134px;
+    margin-left: 10%;
+    width: 845px;
+}
+
+.about_title_1 {
+    color: #10153E;
+    font-size: 65px;
+    font-family: Roboto Condensed;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    text-align: left;
+    margin-bottom: 0;
+    margin-left: 10%;
+    width: 845px;
+}
+
+.about_title_text {
+    color: #10153E;
+    text-align: left;
+    font-size: 29.503px;
+    font-style: normal;
+    font-weight: 400;
+    padding-left: 10%;
+    padding-right: 12%;
+    margin-top: 30px;
+    margin-bottom: 0;
+    line-height: normal;
+}
+
+.join_btn {
+    margin-top: 43px;
+    margin-left: 10%;
+    background-color: #12195E;
+    color: #51E1FF;
+    height: 56px;
+    padding-left: 23px;
+    padding-right: 23px;
+    line-height: 56px;
+    text-decoration: none;
+    display: inline-block;
+    flex-shrink: 0;
+    margin-bottom: 213px;
+    font-size: 22px;
+}
+
+.timeline {
+    background-color: #12195E;
+    color: #fff;
+    height: 459px;
+    position: relative;
+}
+
+.core_mobile {
+    display: none;
+}
+
+.core_title_1 {
+    text-align: center;
+    font-family: Roboto;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 600;
+    color: #10153E;
+    line-height: normal;
+}
+
+.core_title_2 {
+    color: #6C6D79;
+    text-align: center;
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    padding: 26px;
+    line-height: normal;
+}
+
+.menu_title {
+    text-align: center;
+    font-family: Roboto, sans-serif;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 600;
+    cursor: pointer;
+    color: #989898;
+    /* Màu mặc định */
+}
+
+.product_title_1 {
+    margin: 0;
+    height: 100px;
+    font-family: Roboto;
+    width: 60%;
+    margin-top: auto;
+    margin-bottom: auto;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.product_title_2 {
+    margin: 0;
+    font-family: Roboto;
+    width: 90%;
+    height: 100px;
+    color: #fff;
+    margin-top: auto;
+    margin-bottom: auto;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 100px;
+}
+
+.product_title_3 {
+    margin: 0;
+    font-family: Roboto;
+    width: 80%;
+    height: 100px;
+    margin-top: auto;
+    margin-bottom: auto;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 100px;
+}
+
+.product_title_4 {
+    margin: 0;
+    font-family: Roboto;
+    width: 80%;
+    color: #fff;
+    height: 100px;
+    margin-top: auto;
+    margin-bottom: auto;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.product_img_1 {
+    position: absolute;
+    width: 334.8px;
+    height: 726px;
+    bottom: 0;
+    left: -10;
+}
+
+.product_img_2 {
+    position: absolute;
+    width: 334.8px;
+    height: 726px;
+    top: 0;
+    right: -10;
+}
+
+.product_img {
+    height: 800px;
+    position: relative;
+}
+
+.product_banner {
+    color: #10153E;
+    font-family: Roboto Condensed;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    text-align: left;
+    margin-bottom: 0;
+    margin-top: 80px;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 200px;
+}
+
+.btn {
+    width: 260px; height: 100px; 
+    border: 4px solid #12195E; 
+    color: #12195E;
+    text-align: center;
+    font-family: Inter;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+
+
+@media (max-width: 768px) {
+    .about_title {
+        font-size: 70px;
+        width: 623px;
+    }
+
+    .about_title_1 {
+        font-size: 70px;
+        width: 623px;
+    }
+
+    .about_title_text {
+        font-size: 27px;
+    }
+
+    .join_btn {
+        font-size: 27px;
+    }
+
+    .core_web {
+        display: none;
+    }
+
+    .core_mobile {
+        display: flex;
+    }
+
+    .hexagon {
+        width: 286px;
+        /* Độ rộng của hình lục giác */
+        height: 200px;
+        /* Độ cao của phần giữa */
+        background-color: #fff;
+        position: relative;
+        flex-shrink: 0;
+        filter: drop-shadow(0px 2px 20px rgba(27, 35, 64, 0.25));
+
+    }
+
+    .hexagon:before,
+    .hexagon:after {
+        content: "";
+        position: absolute;
+        width: 0;
+        border-left: 143px solid transparent;
+        /* Điều chỉnh theo một nửa của độ rộng */
+        border-right: 143px solid transparent;
+        /* Điều chỉnh theo một nửa của độ rộng */
+    }
+
+    .hexagon:before {
+        bottom: 100%;
+        border-bottom: 93px solid #fff;
+        /* Chiều cao của tam giác phía trên */
+    }
+
+    .hexagon:after {
+        top: 100%;
+        border-top: 93px solid #fff;
+        /* Chiều cao của tam giác phía dưới */
+    }
+
+
+    .hexagon_bg {
+        width: 346px;
+        /* Độ rộng của hình lục giác */
+        height: 296px;
+        /* Độ cao của phần giữa */
+        background-color: #fff;
+        position: relative;
+    }
+
+    .hexagon_bg:before,
+    .hexagon_bg:after {
+        content: "";
+        position: absolute;
+        width: 0;
+        border-left: 172px solid transparent;
+        /* Điều chỉnh theo một nửa của độ rộng */
+        border-right: 172px solid transparent;
+        /* Điều chỉnh theo một nửa của độ rộng */
+    }
+
+    .hexagon_bg:before {
+        bottom: 100%;
+        border-bottom: 93px solid #fff;
+        /* Chiều cao của tam giác phía trên */
+    }
+
+    .hexagon_bg:after {
+        top: 100%;
+        border-top: 93px solid #fff;
+        /* Chiều cao của tam giác phía dưới */
+    }
+
+    .core_title_1 {
+        font-size: 24.834px;
+        margin-bottom: 12px;
+    }
+
+    .core_title_2 {
+        font-size: 19.867px;
+        padding: 0;
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    .hex {
+        margin-top: 120px;
+    }
+
+    .menu_title {
+        font-size: 24px;
+    }
+
+    .product_title {
+        color: var(--text, #10153E);
+        font-family: Roboto;
+        font-size: 30px;
+        width: 100%;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+    }
+    .product_img {
+        position: relative;
+    }
+
+    .product_img_1 {
+        width: 336px;
+        height: 726px;
+        position: absolute;
+        bottom: 0;
+        left: -10;
+    }
+
+    .product_img_2 {
+        width: 336px;
+        height: 726px;
+        position: absolute;
+        top: 0;
+        right: -10;
+    }
+
+    .product_banner {
+        font-size: 50px;
+    }
+
+    .contact_title {
+        font-size: 70px;
+    }
+
+    .btn {
+        width: 263px;
+        height: 103px;
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 425px) {
+    .about_title {
+        font-size: 38.809px;
+        width: 345.402px;
+    }
+
+    .about_title_1 {
+        font-size: 38.809px;
+        width: 345.402px;
+    }
+
+    .about_title_text {
+        font-size: 14.969px;
+        ;
+    }
+
+    .join_btn {
+        height: 40px;
+        line-height: 40px;
+        font-size: 14.969px;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .timeline {
+        height: 243.944px;
+    }
+
+    .hexagon {
+        width: 158px;
+        /* Độ rộng của hình lục giác */
+        height: 120px;
+        /* Độ cao của phần giữa */
+        background-color: #fff;
+        position: relative;
+        flex-shrink: 0;
+        filter: drop-shadow(0px 2px 20px rgba(27, 35, 64, 0.25));
+
+    }
+
+    .hexagon:before,
+    .hexagon:after {
+        content: "";
+        position: absolute;
+        width: 0;
+        border-left: 79px solid transparent;
+        /* Điều chỉnh theo một nửa của độ rộng */
+        border-right: 79px solid transparent;
+        /* Điều chỉnh theo một nửa của độ rộng */
+    }
+
+    .hexagon:before {
+        bottom: 100%;
+        border-bottom: 43px solid #fff;
+        /* Chiều cao của tam giác phía trên */
+    }
+
+    .hexagon:after {
+        top: 100%;
+        border-top: 43px solid #fff;
+        /* Chiều cao của tam giác phía dưới */
+    }
+
+    .core_title_1 {
+        font-size: 13.769px;
+        margin-bottom: 12px;
+    }
+
+    .core_title_2 {
+        font-size: 11.015px;
+        padding: 0;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .hex {
+        margin-top: 80px;
+    }
+
+    .menu_title {
+        font-size: 13.283px;
+    }
+
+    .product_img {
+        position: relative;
+        height: 517px;
+    }
+
+    .product_img_1 {
+        position: absolute;
+        width: 185.4px;
+        height: 401.7px;
+        bottom: 0;
+        left: -10;
+    }
+    
+    .product_img_2 {
+        position: absolute;
+        width: 185.4px;
+        height: 401.7px;
+        top: 0;
+        right: -10;
+    }
+
+    .product_banner {
+        font-size: 27.673px;
+    }
+
+    .contact_title {
+        font-size: 39px;
+    }
+
+    .btn {
+        width: 146px;
+        height: 57;
+        font-size: 16.602px;
     }
 }

@@ -1,4 +1,7 @@
-.start .start__content .start__top h3::after, .creative .creative__top h3::after, .team .team__top h3::after, .blog .blog__top h3::after {
+.start .start__content .start__top h3::after,
+.creative .creative__top h3::after,
+.team .team__top h3::after,
+.blog .blog__top h3::after {
   position: absolute;
   content: "";
   bottom: -2px;
@@ -22,19 +25,42 @@
   border-color: #ffffff transparent transparent transparent;
 }
 
-.start, .page, .creative, .team, .parallax, .blog, .tabs, .factor, .testimonial, .clients, footer {
+.start,
+.page,
+.creative,
+.team,
+.parallax,
+.blog,
+.tabs,
+.factor,
+.testimonial,
+.clients,
+footer {
   padding-top: 100px;
   padding-bottom: 100px;
 }
 
 @media screen and (max-width: 768px) {
-  .start, .page, .creative, .team, .parallax, .blog, .tabs, .factor, .testimonial, .clients, footer {
+
+  .start,
+  .page,
+  .creative,
+  .team,
+  .parallax,
+  .blog,
+  .tabs,
+  .factor,
+  .testimonial,
+  .clients,
+  footer {
     padding-top: 50px;
     padding-bottom: 50px;
   }
 }
 
-.page .page__content .page__right .page__item .page__progress:first-child, .page .page__content .page__right .page__item .page__progress:nth-child(2), .page .page__content .page__right .page__item .page__progress:last-child {
+.page .page__content .page__right .page__item .page__progress:first-child,
+.page .page__content .page__right .page__item .page__progress:nth-child(2),
+.page .page__content .page__right .page__item .page__progress:last-child {
   overflow: visible;
   height: 20px;
   margin-top: 10px;
@@ -42,10 +68,12 @@
   letter-spacing: 1px;
   background: #606060;
   -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
 }
 
-.page .page__content .page__right .page__item .page__progress:first-child .progress__bar span, .page .page__content .page__right .page__item .page__progress:nth-child(2) .progress__bar span, .page .page__content .page__right .page__item .page__progress:last-child .progress__bar span {
+.page .page__content .page__right .page__item .page__progress:first-child .progress__bar span,
+.page .page__content .page__right .page__item .page__progress:nth-child(2) .progress__bar span,
+.page .page__content .page__right .page__item .page__progress:last-child .progress__bar span {
   position: absolute;
   top: -28px;
   right: -5px;
@@ -61,7 +89,9 @@
   color: #222222;
 }
 
-.page .page__content .page__right .page__item .page__progress:first-child .progress__bar span::after, .page .page__content .page__right .page__item .page__progress:nth-child(2) .progress__bar span::after, .page .page__content .page__right .page__item .page__progress:last-child .progress__bar span::after {
+.page .page__content .page__right .page__item .page__progress:first-child .progress__bar span::after,
+.page .page__content .page__right .page__item .page__progress:nth-child(2) .progress__bar span::after,
+.page .page__content .page__right .page__item .page__progress:last-child .progress__bar span::after {
   content: "";
   position: absolute;
   display: block;
@@ -71,11 +101,12 @@
   height: 5px;
   background-color: #ffffff;
   -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
+  transform: rotate(45deg);
   background-color: #a4a4a4;
 }
 
-.creative .creative__portfolio .portfolio__item .protfolio__hover, .team .team__content .team__member .team__img .team__hover {
+.creative .creative__portfolio .portfolio__item .protfolio__hover,
+.team .team__content .team__member .team__img .team__hover {
   top: 0;
   right: 0px;
   left: 0;
@@ -91,7 +122,7 @@
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
@@ -126,20 +157,20 @@ header .navMassive {
 }
 
 header .navMassive .navbar-collapse .nav-item a {
-  color: #ffffff;
-  font-size: 13px;
-  padding: 0 12px;
-  margin: 0;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
+  color: #fff;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 
 header .navMassive .navbar-collapse .nav-item:hover a {
-  color: #d6b161;
+  color: #51E1FF;
 }
 
 header .navMassive .navbar-collapse .nav-item.active a {
-  color: #d6b161;
+  color: #51E1FF;
 }
 
 header .navbar-toggler {
@@ -154,6 +185,7 @@ header .navbar-toggler:focus {
   header .navMassive {
     position: relative;
   }
+
   header .navMassive #navbarMassive {
     position: absolute;
     top: 130px;
@@ -167,25 +199,33 @@ header .navbar-toggler:focus {
     background-color: #101010;
     height: 60px;
   }
-  header .navMassive > a {
+
+  header .navMassive>a {
     margin-right: 30px;
     font-weight: 600;
   }
-  header .navMassive > a img {
+
+  header .navMassive>a img {
     width: 62px;
     height: 60px;
   }
-  header .navMassive #navbarMassive, header .navMassive #navbarMassive-top {
+
+  header .navMassive #navbarMassive,
+  header .navMassive #navbarMassive-top {
     top: 60px;
   }
-  header .navMassive #navbarMassive ul li a, header .navMassive #navbarMassive-top ul li a {
+
+  header .navMassive #navbarMassive ul li a,
+  header .navMassive #navbarMassive-top ul li a {
     display: block;
     background-color: #ffffff;
     color: #333333;
     padding: 15px;
     padding-left: 30px;
   }
-  header .navMassive #navbarMassive ul .display-n, header .navMassive #navbarMassive-top ul .display-n {
+
+  header .navMassive #navbarMassive ul .display-n,
+  header .navMassive #navbarMassive-top ul .display-n {
     display: none;
   }
 }
@@ -196,19 +236,19 @@ header .navbar-toggler:focus {
   top: 0px;
   width: 100%;
   -webkit-transform: translateY(-60px);
-          transform: translateY(-60px);
+  transform: translateY(-60px);
   height: 60px;
   -webkit-transition: all 0s;
   transition: all 0s;
   z-index: 4;
 }
 
-#headerFixed .navMassive > a {
+#headerFixed .navMassive>a {
   margin-right: 30px;
   font-weight: 600;
 }
 
-#headerFixed .navMassive > a img {
+#headerFixed .navMassive>a img {
   width: 62px;
   height: 60px;
 }
@@ -233,7 +273,7 @@ header .navbar-toggler:focus {
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   text-align: center;
 }
 
@@ -258,9 +298,11 @@ header .navbar-toggler:focus {
     width: 100%;
     margin: 0;
   }
+
   .banner .banner__content h1 {
     font-size: 30px;
   }
+
   .banner .banner__content h3 {
     font-size: 18px;
   }
@@ -293,6 +335,7 @@ header .navbar-toggler:focus {
   .start .start__content .start__top h3 {
     font-size: 18px;
   }
+
   .start .start__content .start__top p {
     width: 80%;
   }
@@ -320,7 +363,7 @@ header .navbar-toggler:focus {
   border-radius: 4px;
   text-align: center;
   -webkit-box-shadow: 0 0 0 10px #fff;
-          box-shadow: 0 0 0 10px #fff;
+  box-shadow: 0 0 0 10px #fff;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
@@ -353,6 +396,7 @@ header .navbar-toggler:focus {
   .start .container {
     max-width: 720px;
   }
+
   .start .container .start__content .start__bottom .start__item .start__border {
     margin-bottom: 50px;
   }
@@ -453,12 +497,15 @@ header .navbar-toggler:focus {
   .page .overlay {
     display: none;
   }
+
   .page .page__content {
     max-width: 720px;
   }
+
   .page .page__content .page__left h3 {
     font-size: 15px;
   }
+
   .page .page__content .page__right {
     padding: 50px;
   }
@@ -496,6 +543,7 @@ header .navbar-toggler:focus {
   .creative .creative__top h3 {
     font-size: 18px;
   }
+
   .creative .creative__top p {
     width: 80%;
   }
@@ -552,7 +600,7 @@ header .navbar-toggler:focus {
   top: 30%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 
 .creative .creative__portfolio .portfolio__item .protfolio__hover .protfolio__text {
@@ -560,7 +608,7 @@ header .navbar-toggler:focus {
   top: 65%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   width: 100%;
 }
 
@@ -590,6 +638,7 @@ header .navbar-toggler:focus {
   .creative .creative__portfolio .portfolio__item {
     width: 50%;
   }
+
   .creative .creative__portfolio .portfolio__item .protfolio__hover .protfolio__text {
     top: 65%;
   }
@@ -599,6 +648,7 @@ header .navbar-toggler:focus {
   .creative .creative__portfolio .portfolio__item {
     width: 100%;
   }
+
   .creative .creative__portfolio .portfolio__item .protfolio__hover .protfolio__text {
     top: 65%;
   }
@@ -635,6 +685,7 @@ header .navbar-toggler:focus {
   .team .team__top h3 {
     font-size: 18px;
   }
+
   .team .team__top p {
     width: 80%;
   }
@@ -713,7 +764,7 @@ header .navbar-toggler:focus {
   bottom: 10%;
   left: 50%;
   -webkit-transform: translate(-50%);
-          transform: translate(-50%);
+  transform: translate(-50%);
 }
 
 .team .team__content .team__member .team__img .team__hover .icon i {
@@ -740,8 +791,8 @@ header .navbar-toggler:focus {
 .team .team__promo .promo__content {
   padding: 40px 55px;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 .team .team__promo .promo__content .promo__info {
@@ -795,6 +846,7 @@ header .navbar-toggler:focus {
   .team .container {
     max-width: 720px;
   }
+
   .team .container .team__content .team__member {
     width: 100%;
     padding: 0 30px;
@@ -806,11 +858,13 @@ header .navbar-toggler:focus {
     width: 100%;
     padding: 0 50px;
   }
+
   .team .team__promo .promo__content {
     -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: start;
+    -ms-flex-pack: start;
+    justify-content: start;
   }
+
   .team .team__promo .promo__content .promo__btn {
     max-width: 170px;
     padding: 0;
@@ -874,6 +928,7 @@ header .navbar-toggler:focus {
   .parallax .parallax__content h1 {
     font-size: 26px;
   }
+
   .parallax .parallax__content a {
     font-size: 12px;
   }
@@ -912,6 +967,7 @@ header .navbar-toggler:focus {
   .blog .blog__top h3 {
     font-size: 18px;
   }
+
   .blog .blog__top p {
     width: 80%;
   }
@@ -1110,14 +1166,17 @@ header .navbar-toggler:focus {
     max-width: 767px;
     padding: 0 30px;
   }
+
   .tabs .container .tabs__nav ul li {
     display: block;
     margin: 0;
     margin-bottom: 10px;
   }
+
   .tabs .container .tabs__content {
     margin-top: 0;
   }
+
   .tabs .container .tabs__content h2 {
     font-size: 20px;
   }
@@ -1150,6 +1209,7 @@ header .navbar-toggler:focus {
     padding-top: 30px;
     padding-bottom: 30px;
   }
+
   .factor .factor__content .factor__icon span {
     font-size: 26px;
   }
@@ -1277,15 +1337,19 @@ footer .item__3 .work li a img {
   footer .container {
     max-width: 767px;
   }
+
   footer .item__1 a {
     display: inline-block;
     margin-bottom: 20px;
   }
+
   footer .item__1 p {
     margin-bottom: 30px;
   }
+
   footer .item__2 {
     margin-bottom: 30px;
   }
 }
+
 /*# sourceMappingURL=main.css.map */
