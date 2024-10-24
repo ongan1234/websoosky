@@ -245,7 +245,7 @@ body {
         z-index: 10;
         top: 0;
         padding-top: 90px;
-        left: -100%;
+        left: -200%;
         transition: left 0.3s ease;
         height: 100vh;
     }
@@ -375,7 +375,7 @@ body {
     }
 }
 
-@media (max-width: 425px) {
+@media (max-width: 450px) {
     body {
         padding-top: 110px;
     }
@@ -589,7 +589,7 @@ body {
     display: inline-block;
     flex-shrink: 0;
     margin-bottom: 213px;
-    /* font-size: 22px; */
+    font-size: 22px;
 }
 
 .timeline {
@@ -897,7 +897,7 @@ body {
     }
 }
 
-@media (max-width: 425px) {
+@media (max-width: 450px) {
     .about_title {
         font-size: 38.809px;
         width: 345.402px;
