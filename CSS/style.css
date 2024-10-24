@@ -577,7 +577,7 @@ body {
 }
 
 .join_btn {
-    margin-top: 43px;
+    /* margin-top: 43px;
     margin-left: 10%;
     background-color: #12195E;
     color: #51E1FF;
@@ -585,11 +585,11 @@ body {
     padding-left: 23px;
     padding-right: 23px;
     line-height: 56px;
-    text-decoration: none;
+    text-decoration: none; */
     display: inline-block;
     flex-shrink: 0;
     margin-bottom: 213px;
-    font-size: 22px;
+    /* font-size: 22px; */
 }
 
 .timeline {
