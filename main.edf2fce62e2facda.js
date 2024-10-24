@@ -1,5 +1,5 @@
 // "use strict";
-// (self.webpackChunkvolio = self.webpackChunkvolio || []).push([
+// (self.webpackChunksoosky = self.webpackChunksoosky || []).push([
 // 	["main"], {
 // 		9206: (Ge, re, v) => {
 // 			v.d(re, {
@@ -2838,7 +2838,7 @@
 // 			var or = v(7013);
 // 			class Tr {}
 // 			var is = v(7255);
-// 			const Wt_apiUrl = "https://cms.volio.vn/api";
+// 			const Wt_apiUrl = "https://cms.soosky.vn/api";
 // 			var hn = v(9206);
 // 			let Es = (() => {
 // 					class y extends or.ci {
@@ -3014,7 +3014,7 @@
 // 			})();
 // 			var Rr = v(5602),
 // 				rs = v(9397);
-// 			const To_apiUrl = "https://cms.volio.vn/api";
+// 			const To_apiUrl = "https://cms.soosky.vn/api";
 // 			let Cs = (() => {
 // 				class y extends Rr.Gq {
 // 					constructor(s) {
@@ -4232,7 +4232,7 @@
 // 			let pr = (() => {
 // 					class y {
 // 						constructor(s, f) {
-// 							this.menuService = s, this.FooterService = f, this.imagePath = "../../../../img/home/log_footer.webp", this.homeURL = "https://volio.group", this.footerData = null, this.footerLogo = null, this.taxInfo = null, this.phoneInfo = null, this.emailInfo = null, this.officeInfo = null, this.headOfficeInfo = null, this.checkPath = hn.p9, this.menuFooter = []
+// 							this.menuService = s, this.FooterService = f, this.imagePath = "../../../../img/home/log_footer.webp", this.homeURL = "https://soosky.group", this.footerData = null, this.footerLogo = null, this.taxInfo = null, this.phoneInfo = null, this.emailInfo = null, this.officeInfo = null, this.headOfficeInfo = null, this.checkPath = hn.p9, this.menuFooter = []
 // 						}
 // 						ngOnInit() {
 // 							this.menuService.GetAll().subscribe(s => {
