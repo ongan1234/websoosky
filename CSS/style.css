@@ -77,6 +77,7 @@ body {
     margin-right: 20px;
     text-decoration: none;
     margin-right: 60px;
+    font-family: Roboto;
 }
 
 .menu_item a.active {
@@ -1014,4 +1015,17 @@ body {
         height: 57;
         font-size: 16.602px;
     }
+}
+
+
+.font_Roboto {
+    font-family: Roboto;
+}
+
+.font_RobotoCondensed {
+    font-family: "Roboto Condensed";
+}
+
+.font_Inter {
+    font-family: Inter;
 }
