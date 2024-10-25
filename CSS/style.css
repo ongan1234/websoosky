@@ -4,7 +4,8 @@
     left: 0;
     width: 100%;
     background: #12195E;
-    z-index: 1000; /* Đảm bảo header luôn nằm trên các thành phần khác */
+    z-index: 1000;
+    /* Đảm bảo header luôn nằm trên các thành phần khác */
 }
 
 /* Sticky header cho mobile */
@@ -14,12 +15,14 @@
     left: 0;
     width: 100%;
     background: #12195E;
-    z-index: 999; /* Đảm bảo header mobile luôn nằm trên các thành phần khác */
+    z-index: 999;
+    /* Đảm bảo header mobile luôn nằm trên các thành phần khác */
 }
 
 /* Đảm bảo nội dung trang không bị che bởi header */
 body {
-    padding-top: 80px; /* Thêm khoảng trống bằng chiều cao của header */
+    padding-top: 80px;
+    /* Thêm khoảng trống bằng chiều cao của header */
 }
 
 .header_web {
@@ -44,9 +47,7 @@ body {
     height: 90px;
 }
 
-.headerlogo {
-
-}
+.headerlogo {}
 
 .header_logo {
     text-align: left;
@@ -155,7 +156,7 @@ body {
     color: var(--text, #10153E);
     text-align: center;
     font-family: Roboto;
-    font-size: 23px;
+    font-size: 16pt;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -167,8 +168,25 @@ body {
 }
 
 .logo_footer {
-    width: 204.946px;
-    height: 176px;
+    width: 66.946px;
+    height: 43px;
+}
+
+.item-footer-3 {
+    width: 33%;
+}
+
+.logo_text {
+    text-decoration: none;
+    color: var(--Color, #51E1FF);
+    text-align: center;
+    font-family: "Brolink DEMO";
+    font-size: 19.819px;
+    font-style: normal;
+    display: inline-block;
+    font-weight: 400;
+    line-height: 43px;
+    padding-left: 10px;
 }
 
 .footer_list {
@@ -217,6 +235,10 @@ body {
     padding-right: 10%;
 }
 
+.arrow {
+    display: none;
+}
+
 /* .vn_office {
     width: 507px;
 } */
@@ -252,8 +274,10 @@ body {
     }
 
     .slide_menu.active {
-        left: 0; /* Đẩy menu sang phải để hiển thị */
+        left: 0;
+        /* Đẩy menu sang phải để hiển thị */
     }
+
     .menu_h {
         padding: 0;
     }
@@ -333,7 +357,7 @@ body {
         color: var(--text, #10153E);
         text-align: center;
         font-family: Roboto;
-        font-size: 9.6px;
+        font-size: 24px;
         font-style: normal;
         font-weight: 400;
         line-height: normal;
@@ -352,15 +376,6 @@ body {
     .product_logo {
         width: 243.638px;
         height: 157.421px;
-    }
-
-    .logo_footer {
-        width: 81.978px;
-        height: 70.401px;
-    }
-
-    .footer_logo {
-        width: 100%;
     }
 
     .information-footer {
@@ -412,8 +427,10 @@ body {
     }
 
     .slide_menu.active {
-        left: 0; /* Đẩy menu sang phải để hiển thị */
+        left: 0;
+        /* Đẩy menu sang phải để hiển thị */
     }
+
     .menu_h {
         padding: 0;
     }
@@ -506,7 +523,7 @@ body {
         color: var(--text, #10153E);
         text-align: center;
         font-family: Roboto;
-        font-size: 9.6px;
+        font-size: 12px;
         font-style: normal;
         font-weight: 400;
         line-height: normal;
@@ -518,8 +535,8 @@ body {
     }
 
     .logo_footer {
-        width: 165.453px;
-        height: 148.614px;
+        width: 40.022px;
+        height: 25.86px;
     }
 
     .information-footer {
@@ -640,7 +657,7 @@ body {
     margin: 0;
     height: 100px;
     font-family: Roboto;
-    width: 60%;
+    width: 100%;
     margin-top: auto;
     margin-bottom: auto;
     font-size: 40px;
@@ -652,7 +669,7 @@ body {
 .product_title_2 {
     margin: 0;
     font-family: Roboto;
-    width: 90%;
+    width: 100%;
     height: 100px;
     color: #fff;
     margin-top: auto;
@@ -660,26 +677,26 @@ body {
     font-size: 40px;
     font-style: normal;
     font-weight: 600;
-    line-height: 100px;
+    line-height: normal;
 }
 
 .product_title_3 {
     margin: 0;
     font-family: Roboto;
-    width: 80%;
+    width: 100%;
     height: 100px;
     margin-top: auto;
     margin-bottom: auto;
     font-size: 40px;
     font-style: normal;
     font-weight: 600;
-    line-height: 100px;
+    line-height: normal;
 }
 
 .product_title_4 {
     margin: 0;
     font-family: Roboto;
-    width: 80%;
+    width: 100%;
     color: #fff;
     height: 100px;
     margin-top: auto;
@@ -727,14 +744,62 @@ body {
 }
 
 .btn {
-    width: 260px; height: 100px; 
-    border: 4px solid #12195E; 
+    width: 260px;
+    height: 100px;
+    border: 4px solid #12195E;
     color: #12195E;
     font-family: Inter;
     font-size: 30px;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
+}
+
+.footer_div_logo {
+    margin-left: 8%;
+    margin-right: 8%;
+    text-align: left;
+    display: flex;
+}
+
+.ft_lg {
+    width: 33%;
+    height: auto;
+    display: flex;
+    align-items: center;
+}
+
+.ft_link {
+    width: 33%;
+    height: auto;
+    line-height: 100%;
+    position: relative;
+}
+
+.item-footer-2 {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.ft_pin {
+    font-size: 20px;
+}
+
+.footer_copy {
+    margin-left: 8%;
+    margin-right: 8%;
+    color: #FFF;
+    /* font-family: Roboto; */
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    border-top: 0.4px solid #51e2ff76;
+    margin-top: 30px;
 }
 
 
@@ -863,6 +928,7 @@ body {
         font-weight: 600;
         line-height: normal;
     }
+
     .product_img {
         position: relative;
     }
@@ -901,7 +967,7 @@ body {
         margin: 0;
         height: 100px;
         font-family: Roboto;
-        width: 90%;
+        width: 100%;
         margin-top: auto;
         margin-bottom: auto;
         font-size: 30px;
@@ -909,11 +975,11 @@ body {
         font-weight: 600;
         line-height: normal;
     }
-    
+
     .product_title_2 {
         margin: 0;
         font-family: Roboto;
-        width: 90%;
+        width: 100%;
         height: 100px;
         color: #fff;
         margin-top: auto;
@@ -921,26 +987,26 @@ body {
         font-size: 30px;
         font-style: normal;
         font-weight: 600;
-        line-height: 100px;
+        line-height: normal;
     }
-    
+
     .product_title_3 {
         margin: 0;
         font-family: Roboto;
-        width: 80%;
+        width: 100%;
         height: 100px;
         margin-top: auto;
         margin-bottom: auto;
         font-size: 30px;
         font-style: normal;
         font-weight: 600;
-        line-height: 100px;
+        line-height: normal;
     }
-    
+
     .product_title_4 {
         margin: 0;
         font-family: Roboto;
-        width: 80%;
+        width: 100%;
         color: #fff;
         height: 100px;
         margin-top: auto;
@@ -950,6 +1016,53 @@ body {
         font-weight: 600;
         line-height: normal;
     }
+
+    .footer_div_logo {
+        display: block;
+    }
+
+    .information-footer {
+        text-align: left;
+    }
+
+    .information {
+        margin-top: 15px;
+    }
+
+    .ft_link {
+        width: 100%;
+    }
+
+    .ft_lg {
+        width: 100%;
+        padding-bottom: 70px;
+    }
+
+    .item-footer-3 {
+        padding-top: 60px;
+        width: 100%;
+    }
+
+    .logo_text_1 {
+        width: 35%;
+        color: var(--Color, #51E1FF);
+        font-family: Roboto;
+        font-size: 11px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    .copy_right {
+        font-size: 11px;
+        width: 65%;
+    }
+
+    .ft_pin {
+        font-size: 12px;
+    }
+
+
 }
 
 @media (max-width: 450px) {
@@ -1047,7 +1160,7 @@ body {
         bottom: 0;
         left: -10;
     }
-    
+
     .product_img_2 {
         position: absolute;
         width: 185.4px;
@@ -1074,54 +1187,102 @@ body {
         margin: 0;
         height: 70px;
         font-family: Roboto;
-        width: 80%;
+        width: 100%;
         margin-top: auto;
         margin-bottom: auto;
-        font-size: 25px;
+        font-size: 23px;
         font-style: normal;
         font-weight: 600;
         line-height: normal;
     }
-    
+
     .product_title_2 {
         margin: 0;
         font-family: Roboto;
-        width: 90%;
+        width: 100%;
         height: 70px;
         color: #fff;
         margin-top: auto;
         margin-bottom: auto;
-        font-size: 25px;
-        font-style: normal;
-        font-weight: 600;
-        line-height: 70px;
-    }
-    
-    .product_title_3 {
-        margin: 0;
-        font-family: Roboto;
-        width: 80%;
-        height: 70px;
-        margin-top: auto;
-        margin-bottom: auto;
-        font-size: 25px;
-        font-style: normal;
-        font-weight: 600;
-        line-height: 70px;
-    }
-    
-    .product_title_4 {
-        margin: 0;
-        font-family: Roboto;
-        width: 80%;
-        color: #fff;
-        height: 70px;
-        margin-top: auto;
-        margin-bottom: auto;
-        font-size: 25px;
+        font-size: 23px;
         font-style: normal;
         font-weight: 600;
         line-height: normal;
+    }
+
+    .product_title_3 {
+        margin: 0;
+        font-family: Roboto;
+        width: 100%;
+        height: 70px;
+        margin-top: auto;
+        margin-bottom: auto;
+        font-size: 23px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+    }
+
+    .product_title_4 {
+        margin: 0;
+        font-family: Roboto;
+        width: 100%;
+        color: #fff;
+        height: 70px;
+        margin-top: auto;
+        margin-bottom: auto;
+        font-size: 23px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+    }
+
+    .ft_link {
+        width: 100%;
+    }
+
+    .ft_lg {
+        width: 100%;
+        padding-bottom: 60px;
+    }
+
+    .item-footer-3 {
+        padding-top: 60px;
+        width: 100%;
+    }
+
+    .logo_text_1 {
+        width: 35%;
+        color: var(--Color, #51E1FF);
+        font-family: Roboto;
+        font-size: 11px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    .logo_text {
+        color: var(--Color, #51E1FF);
+        text-align: center;
+        font-family: "Brolink DEMO";
+        font-size: 11.891px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    .copy_right {
+        font-size: 11px;
+        width: 65%;
+    }
+
+    .ft_pin {
+        font-size: 12px;
+    }
+
+    .list_product {
+        padding-left: 10px;
+        padding-right: 0;
     }
 }
 
@@ -1137,4 +1298,3 @@ body {
 .font_Inter {
     font-family: Inter;
 }
-
