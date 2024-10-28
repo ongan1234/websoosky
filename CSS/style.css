@@ -176,7 +176,7 @@ body {
 }
 
 .item-footer-3 {
-    width: 33%;
+    width: 45%;
 }
 
 .logo_text {
@@ -392,9 +392,10 @@ body {
     .about_mobile {
         display: flex;
     }
+
     .logo_footer {
         width: 92px;
-    height: 17.282px;
+        height: 17.282px;
     }
 }
 
@@ -567,7 +568,7 @@ body {
         width: 34.296px;
         height: 34.31px;
     }
-    
+
     .product_2 {
         width: 42.433px;
         height: 31.71px;
@@ -782,17 +783,18 @@ body {
     margin-right: 8%;
     text-align: left;
     display: flex;
+    justify-content: space-between;
 }
 
 .ft_lg {
-    width: 33%;
+    width: 20%;
     height: auto;
     display: flex;
     align-items: center;
 }
 
 .ft_link {
-    width: 33%;
+    width: 25%;
     height: auto;
     line-height: 100%;
     position: relative;
@@ -841,7 +843,7 @@ body {
     font-style: normal;
     font-weight: 500;
     line-height: normal;
-    
+
 }
 
 .nav-item {
@@ -1260,7 +1262,7 @@ body {
     .about_web_item_1 {
         font-size: 19px;
     }
-    
+
     .about_web_item_2 {
         font-size: 19px;
     }
@@ -1438,6 +1440,59 @@ body {
     .product_logo {
         width: 120px !important;
         height: 70px !important;
+    }
+}
+
+@media (max-width: 630px) {
+    .hexagon {
+        width: 158px;
+        /* Độ rộng của hình lục giác */
+        height: 120px;
+        /* Độ cao của phần giữa */
+        background-color: #fff;
+        position: relative;
+        flex-shrink: 0;
+        filter: drop-shadow(0px 2px 20px rgba(27, 35, 64, 0.25));
+
+    }
+
+    .hexagon:before,
+    .hexagon:after {
+        content: "";
+        position: absolute;
+        width: 0;
+        border-left: 79px solid transparent;
+        /* Điều chỉnh theo một nửa của độ rộng */
+        border-right: 79px solid transparent;
+        /* Điều chỉnh theo một nửa của độ rộng */
+    }
+
+    .hexagon:before {
+        bottom: 100%;
+        border-bottom: 43px solid #fff;
+        /* Chiều cao của tam giác phía trên */
+    }
+
+    .hexagon:after {
+        top: 100%;
+        border-top: 43px solid #fff;
+        /* Chiều cao của tam giác phía dưới */
+    }
+
+    .core_title_1 {
+        font-size: 13.769px;
+        margin-bottom: 12px;
+    }
+
+    .core_title_2 {
+        font-size: 11.015px;
+        padding: 0;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .hex {
+        margin-top: 80px;
     }
 }
 
@@ -1667,5 +1722,58 @@ body {
         font-style: normal;
         font-weight: 500;
         line-height: normal;
+    }
+}
+
+@media (max-width: 360px) {
+    .hexagon {
+        width: 128px;
+        /* Độ rộng của hình lục giác */
+        height: 105px;
+        /* Độ cao của phần giữa */
+        background-color: #fff;
+        position: relative;
+        flex-shrink: 0;
+        filter: drop-shadow(0px 2px 20px rgba(27, 35, 64, 0.25));
+
+    }
+
+    .hexagon:before,
+    .hexagon:after {
+        content: "";
+        position: absolute;
+        width: 0;
+        border-left: 64px solid transparent;
+        /* Điều chỉnh theo một nửa của độ rộng */
+        border-right: 64px solid transparent;
+        /* Điều chỉnh theo một nửa của độ rộng */
+    }
+
+    .hexagon:before {
+        bottom: 100%;
+        border-bottom: 35px solid #fff;
+        /* Chiều cao của tam giác phía trên */
+    }
+
+    .hexagon:after {
+        top: 100%;
+        border-top: 35px solid #fff;
+        /* Chiều cao của tam giác phía dưới */
+    }
+
+    .core_title_1 {
+        font-size: 12.769px;
+        margin-bottom: 12px;
+    }
+
+    .core_title_2 {
+        font-size: 11.015px;
+        padding: 0;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .hex {
+        margin-top: 80px;
     }
 }

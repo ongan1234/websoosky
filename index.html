@@ -6496,29 +6496,27 @@
                                   millions.</p>
 
 
-                                <div class="container-fluid p-0" style="position: relative; width: 100%;">
-                                  <div class=" " style="padding-left: 20px; padding-right: 20px;">
-                                    <div class="owl-carousel owl-theme" id="owl-carousel-1" style="">
-                                      <div class="">
-                                        <img src="./banner_home_1.png" alt="">
-                                      </div>
-                                      <div class="">
-                                        <img src="./banner_home_2.png" alt="">
-                                      </div>
-                                      <div class="">
-                                        <img src="./banner_home_3.png" alt="">
-                                      </div>
-                                      <div class="">
-                                        <img src="./banner_home_4.png" alt="">
-                                      </div>
-                                      <div class="">
-                                        <img src="./banner_home_5.png" alt="">
-                                      </div>
+                                  <div class="container-fluid  banner_container" style="position: relative; width: 100%;">
+                                    <div style="padding-left: 20px; padding-right: 20px;">
+                                        <div class="owl-carousel owl-theme" id="owl-carousel-1">
+                                            <div class="banner_container_item">
+                                                <img src="./banner_home_1.png" alt="">
+                                            </div>
+                                            <div class="banner_container_item">
+                                                <img src="./banner_home_2.png" alt="">
+                                            </div>
+                                            <div class="banner_container_item">
+                                                <img src="./banner_home_3.png" alt="">
+                                            </div>
+                                            <div class="banner_container_item">
+                                                <img src="./banner_home_4.png" alt="">
+                                            </div>
+                                            <div class="banner_container_item">
+                                                <img src="./banner_home_5.png" alt="">
+                                            </div>
+                                        </div>
                                     </div>
-                                  </div>
-                                  <div
-                                    style="height: 234px; width: 100%; background-color: #12195E; position: absolute; bottom: -20;">
-                                  </div>
+                                    <div style="height: 234px; width: 100%; background-color: #12195E; position: absolute; bottom: -20px;"></div>
                                 </div>
 
 
@@ -6590,7 +6588,7 @@
                 <div _ngcontent-ng-c1325922309="" class="item-achievement ng-star-inserted">
                   <div _ngcontent-ng-c1325922309="" class="statistical">
                     <div _ngcontent-ng-c1325922309="" class="statistical-item">
-                      <span _ngcontent-ng-c1325922309="" class="number" id="counter" style="color: #51E1FF;">200</span>
+                      <span _ngcontent-ng-c1325922309="" class="number" id="counter1" style="color: #51E1FF;">200</span>
                       <span _ngcontent-ng-c1325922309="" class="unit"
                         style="position: absolute; right: 22%; color: #51E1FF;"> % </span>
                       <span _ngcontent-ng-c1325922309="" class="number" style="color: #51E1FF;">+</span>
@@ -6612,7 +6610,8 @@
                       </div>
                     </div>
                     <div _ngcontent-ng-c1325922309="" class="statistical-item">
-                      <span _ngcontent-ng-c1325922309="" class="number" style="color: #51E1FF;">5M+</span>
+                      <span _ngcontent-ng-c1325922309="" class="number" id="counter2" style="color: #51E1FF; margin-right: 0;">5M+</span>
+                      <span _ngcontent-ng-c1325922309="" class="number" style="color: #51E1FF;">M+</span>
                       <span _ngcontent-ng-c1325922309="" class="unit" style="color: #51E1FF;"></span>
                     </div>
                   </div>
@@ -6642,7 +6641,8 @@
                       </div>
                     </div>
                     <div _ngcontent-ng-c1325922309="" class="statistical-item">
-                      <span _ngcontent-ng-c1325922309="" class="number" style="color: #51E1FF;">50+</span>
+                      <span _ngcontent-ng-c1325922309="" class="number" id="counter3" style="color: #51E1FF; margin-right: 0;">50</span>
+                      <span _ngcontent-ng-c1325922309="" class="number" style="color: #51E1FF;">+</span>
                       <span _ngcontent-ng-c1325922309="" class="unit" style="color: #51E1FF;"></span>
                     </div>
                   </div>
@@ -6656,7 +6656,7 @@
                 <div _ngcontent-ng-c1325922309="" class="item-achievement ng-star-inserted">
                   <div _ngcontent-ng-c1325922309="" class="statistical">
                     <div _ngcontent-ng-c1325922309="" class="statistical-item">
-                      <span _ngcontent-ng-c1325922309="" class="number" style="color: #51E1FF;">1000</span>
+                      <span _ngcontent-ng-c1325922309="" class="number" id="counter4" style="color: #51E1FF;">1000</span>
                       <span _ngcontent-ng-c1325922309="" class="unit" style="color: #51E1FF;">%</span>
                     </div>
                   </div>
@@ -7076,6 +7076,30 @@
       });
     }
   </script>
+
+<script>
+  function animateCounter(id, start, end, duration) {
+      let element = document.getElementById(id);
+      let range = end - start;
+      let increment = end > start ? 1 : -1;
+      let stepTime = Math.abs(Math.floor(duration / range));
+      let current = start;
+
+      let timer = setInterval(() => {
+          current += increment;
+          element.textContent = current;
+          if (current == end) {
+              clearInterval(timer);
+          }
+      }, stepTime);
+  }
+
+  // Gán animation cho các số
+  animateCounter("counter1", 0, 200, 2000);
+  animateCounter("counter2", 0, 5, 1000);
+  animateCounter("counter3", 0, 50, 2000);
+  animateCounter("counter4", 0, 1000, 2000);
+</script>
 
 </body>
 
