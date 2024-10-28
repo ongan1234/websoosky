@@ -853,15 +853,417 @@ body {
 
 
 
-@media (max-width: 768px) {
+
+
+
+.core_web {
+    margin-top: 200px;
+}
+
+.font_Roboto {
+    font-family: Roboto;
+}
+
+.font_RobotoCondensed {
+    font-family: "Roboto Condensed";
+}
+
+.font_Inter {
+    font-family: Inter;
+}
+
+.row {
+    --bs-gutter-x: 0;
+}
+
+.about_web_item_1 {
+    font-family: Inter;
+    font-size: 23px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-left: 10%;
+    padding-right: 10%;
+    text-align: right;
+}
+
+.about_web_item_2 {
+    font-family: Inter;
+    font-size: 23px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.partner_list {
+    justify-content: space-around;
+}
+
+.core_web_hex_title {
+    text-align: center;
+    font-family: Roboto;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 600;
+    color: #10153E;
+    line-height: normal;
+}
+
+.core_web_hex_text {
+    color: #6C6D79;
+    text-align: center;
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    padding: 26px;
+    line-height: normal;
+}
+
+.our_core {
+    margin-top: 140px;
+}
+
+@media (max-width: 1602px) {
+    .core_web {
+        margin-top: 110px;
+    }
+    .core_web_hex_title {
+        font-size: 25px;
+    }
+
+    .core_web_hex_text {
+        font-size: 18px;
+    }
+
+    .hexagon {
+        width: 266px;
+        /* Độ rộng của hình lục giác */
+        height: 246px;
+        /* Độ cao của phần giữa */
+        background-color: #fff;
+        position: relative;
+        flex-shrink: 0;
+        filter: drop-shadow(0px 2px 20px rgba(27, 35, 64, 0.25));
+
+    }
+
+    .hexagon:before,
+    .hexagon:after {
+        content: "";
+        position: absolute;
+        width: 0;
+        border-left: 133px solid transparent;
+        /* Điều chỉnh theo một nửa của độ rộng */
+        border-right: 133px solid transparent;
+        /* Điều chỉnh theo một nửa của độ rộng */
+    }
+
+    .hexagon:before {
+        bottom: 100%;
+        border-bottom: 70px solid #fff;
+        /* Chiều cao của tam giác phía trên */
+    }
+
+    .hexagon:after {
+        top: 100%;
+        border-top: 70px solid #fff;
+        /* Chiều cao của tam giác phía dưới */
+    }
+
+
+    .hexagon_bg {
+        width: 306px;
+        /* Độ rộng của hình lục giác */
+        height: 276px;
+        /* Độ cao của phần giữa */
+        background-color: #fff;
+        position: relative;
+    }
+
+    .hexagon_bg:before,
+    .hexagon_bg:after {
+        content: "";
+        position: absolute;
+        width: 0;
+        border-left: 172px solid transparent;
+        /* Điều chỉnh theo một nửa của độ rộng */
+        border-right: 172px solid transparent;
+        /* Điều chỉnh theo một nửa của độ rộng */
+    }
+
+    .hexagon_bg:before {
+        bottom: 100%;
+        border-bottom: 93px solid #fff;
+        /* Chiều cao của tam giác phía trên */
+    }
+
+    .hexagon_bg:after {
+        top: 100%;
+        border-top: 93px solid #fff;
+        /* Chiều cao của tam giác phía dưới */
+    }
+}
+
+@media (max-width: 1440px) {
+    .product_img {
+        height: 550px;
+    }
+
+    .core_web {
+        display: none;
+    }
+
+    .core_mobile {
+        display: flex;
+    }
+
+    .hexagon {
+        width: 286px;
+        /* Độ rộng của hình lục giác */
+        height: 200px;
+        /* Độ cao của phần giữa */
+        background-color: #fff;
+        position: relative;
+        flex-shrink: 0;
+        filter: drop-shadow(0px 2px 20px rgba(27, 35, 64, 0.25));
+
+    }
+
+    .hexagon:before,
+    .hexagon:after {
+        content: "";
+        position: absolute;
+        width: 0;
+        border-left: 143px solid transparent;
+        /* Điều chỉnh theo một nửa của độ rộng */
+        border-right: 143px solid transparent;
+        /* Điều chỉnh theo một nửa của độ rộng */
+    }
+
+    .hexagon:before {
+        bottom: 100%;
+        border-bottom: 93px solid #fff;
+        /* Chiều cao của tam giác phía trên */
+    }
+
+    .hexagon:after {
+        top: 100%;
+        border-top: 93px solid #fff;
+        /* Chiều cao của tam giác phía dưới */
+    }
+
+    .core_title_1 {
+        font-size: 24.834px;
+        margin-bottom: 12px;
+    }
+
+    .core_title_2 {
+        font-size: 19.867px;
+        padding: 0;
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    .hex {
+        margin-top: 120px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .number {
+        font-size: 40px !important;
+    }
+
+    .unit {
+        font-size: 20px !important;
+    }
+
+    .growth_text {
+        font-size: 16px;
+    }
+
+    .product_img {
+        height: 650px;
+    }
+
     .about_title {
-        font-size: 70px;
-        width: 623px;
+        font-size: 50px;
+    }
+
+    .partner_list {
+        justify-content: flex-start;
     }
 
     .about_title_1 {
-        font-size: 70px;
-        width: 623px;
+        font-size: 50px;
+    }
+
+    .about_web_item_1 {
+        font-size: 19px;
+    }
+
+    .about_web_item_2 {
+        font-size: 19px;
+    }
+
+    .core_web {
+        display: none;
+    }
+
+    .core_mobile {
+        display: flex;
+    }
+
+    .hexagon {
+        width: 286px;
+        /* Độ rộng của hình lục giác */
+        height: 200px;
+        /* Độ cao của phần giữa */
+        background-color: #fff;
+        position: relative;
+        flex-shrink: 0;
+        filter: drop-shadow(0px 2px 20px rgba(27, 35, 64, 0.25));
+
+    }
+
+    .hexagon:before,
+    .hexagon:after {
+        content: "";
+        position: absolute;
+        width: 0;
+        border-left: 143px solid transparent;
+        /* Điều chỉnh theo một nửa của độ rộng */
+        border-right: 143px solid transparent;
+        /* Điều chỉnh theo một nửa của độ rộng */
+    }
+
+    .hexagon:before {
+        bottom: 100%;
+        border-bottom: 93px solid #fff;
+        /* Chiều cao của tam giác phía trên */
+    }
+
+    .hexagon:after {
+        top: 100%;
+        border-top: 93px solid #fff;
+        /* Chiều cao của tam giác phía dưới */
+    }
+
+
+    .hexagon_bg {
+        width: 346px;
+        /* Độ rộng của hình lục giác */
+        height: 296px;
+        /* Độ cao của phần giữa */
+        background-color: #fff;
+        position: relative;
+    }
+
+    .hexagon_bg:before,
+    .hexagon_bg:after {
+        content: "";
+        position: absolute;
+        width: 0;
+        border-left: 172px solid transparent;
+        /* Điều chỉnh theo một nửa của độ rộng */
+        border-right: 172px solid transparent;
+        /* Điều chỉnh theo một nửa của độ rộng */
+    }
+
+    .hexagon_bg:before {
+        bottom: 100%;
+        border-bottom: 93px solid #fff;
+        /* Chiều cao của tam giác phía trên */
+    }
+
+    .hexagon_bg:after {
+        top: 100%;
+        border-top: 93px solid #fff;
+        /* Chiều cao của tam giác phía dưới */
+    }
+
+    .core_title_1 {
+        font-size: 24.834px;
+        margin-bottom: 12px;
+    }
+
+    .core_title_2 {
+        font-size: 19.867px;
+        padding: 0;
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    .hex {
+        margin-top: 120px;
+    }
+
+    .footer_div_logo {
+        display: block;
+    }
+
+    .information-footer {
+        text-align: left;
+    }
+
+    .information {
+        margin-top: 15px;
+    }
+
+    .ft_link {
+        width: 100%;
+    }
+
+    .ft_lg {
+        width: 100%;
+        padding-bottom: 70px;
+    }
+
+    .item-footer-3 {
+        padding-top: 60px;
+        width: 100%;
+    }
+
+    .logo_text_1 {
+        width: 35%;
+        color: var(--Color, #51E1FF);
+        font-family: Roboto;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    .copy_right {
+        font-size: 20px;
+        width: 65%;
+    }
+
+    .ft_pin {
+        font-size: 20px;
+    }
+
+    .nav-item .nav-link {
+        font-family: Roboto;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+}
+
+@media (max-width: 768px) {
+    .about_title {
+        font-size: 50px;
+        width: 90%;
+        padding-right: 10px;
+    }
+
+    .about_title_1 {
+        font-size: 50px;
     }
 
     .about_title_text {
@@ -1065,300 +1467,6 @@ body {
         font-style: normal;
         font-weight: 600;
         line-height: normal;
-    }
-
-    .footer_div_logo {
-        display: block;
-    }
-
-    .information-footer {
-        text-align: left;
-    }
-
-    .information {
-        margin-top: 15px;
-    }
-
-    .ft_link {
-        width: 100%;
-    }
-
-    .ft_lg {
-        width: 100%;
-        padding-bottom: 70px;
-    }
-
-    .item-footer-3 {
-        padding-top: 60px;
-        width: 100%;
-    }
-
-    .logo_text_1 {
-        width: 35%;
-        color: var(--Color, #51E1FF);
-        font-family: Roboto;
-        font-size: 20px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: normal;
-    }
-
-    .copy_right {
-        font-size: 20px;
-        width: 65%;
-    }
-
-    .ft_pin {
-        font-size: 20px;
-    }
-
-    .nav-item .nav-link {
-        font-family: Roboto;
-        font-size: 20px;
-        font-style: normal;
-        font-weight: 500;
-        line-height: normal;
-    }
-}
-
-
-.core_web {
-    margin-top: 200px;
-}
-
-.font_Roboto {
-    font-family: Roboto;
-}
-
-.font_RobotoCondensed {
-    font-family: "Roboto Condensed";
-}
-
-.font_Inter {
-    font-family: Inter;
-}
-
-.row {
-    --bs-gutter-x: 0;
-}
-
-.about_web_item_1 {
-    font-family: Inter;
-    font-size: 23px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    padding-left: 10%;
-    padding-right: 10%;
-    text-align: right;
-}
-
-.about_web_item_2 {
-    font-family: Inter;
-    font-size: 23px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    padding-left: 10%;
-    padding-right: 10%;
-}
-
-.partner_list {
-    justify-content: space-around;
-}
-
-@media (max-width: 1440px) {
-    .product_img {
-        height: 550px;
-    }
-
-    .core_web {
-        display: none;
-    }
-
-    .core_mobile {
-        display: flex;
-    }
-
-    .hexagon {
-        width: 286px;
-        /* Độ rộng của hình lục giác */
-        height: 200px;
-        /* Độ cao của phần giữa */
-        background-color: #fff;
-        position: relative;
-        flex-shrink: 0;
-        filter: drop-shadow(0px 2px 20px rgba(27, 35, 64, 0.25));
-
-    }
-
-    .hexagon:before,
-    .hexagon:after {
-        content: "";
-        position: absolute;
-        width: 0;
-        border-left: 143px solid transparent;
-        /* Điều chỉnh theo một nửa của độ rộng */
-        border-right: 143px solid transparent;
-        /* Điều chỉnh theo một nửa của độ rộng */
-    }
-
-    .hexagon:before {
-        bottom: 100%;
-        border-bottom: 93px solid #fff;
-        /* Chiều cao của tam giác phía trên */
-    }
-
-    .hexagon:after {
-        top: 100%;
-        border-top: 93px solid #fff;
-        /* Chiều cao của tam giác phía dưới */
-    }
-
-    .core_title_1 {
-        font-size: 24.834px;
-        margin-bottom: 12px;
-    }
-
-    .core_title_2 {
-        font-size: 19.867px;
-        padding: 0;
-        padding-left: 25px;
-        padding-right: 25px;
-    }
-
-    .hex {
-        margin-top: 120px;
-    }
-}
-
-@media (max-width: 1024px) {
-    .number {
-        font-size: 40px !important;
-    }
-
-    .unit {
-        font-size: 20px !important;
-    }
-
-    .growth_text {
-        font-size: 16px;
-    }
-
-    .product_img {
-        height: 650px;
-    }
-
-    .about_title {
-        font-size: 50px;
-    }
-
-    .partner_list {
-        justify-content: flex-start;
-    }
-
-    .about_title_1 {
-        font-size: 50px;
-    }
-
-    .about_web_item_1 {
-        font-size: 19px;
-    }
-
-    .about_web_item_2 {
-        font-size: 19px;
-    }
-
-    .core_web {
-        display: none;
-    }
-
-    .core_mobile {
-        display: flex;
-    }
-
-    .hexagon {
-        width: 286px;
-        /* Độ rộng của hình lục giác */
-        height: 200px;
-        /* Độ cao của phần giữa */
-        background-color: #fff;
-        position: relative;
-        flex-shrink: 0;
-        filter: drop-shadow(0px 2px 20px rgba(27, 35, 64, 0.25));
-
-    }
-
-    .hexagon:before,
-    .hexagon:after {
-        content: "";
-        position: absolute;
-        width: 0;
-        border-left: 143px solid transparent;
-        /* Điều chỉnh theo một nửa của độ rộng */
-        border-right: 143px solid transparent;
-        /* Điều chỉnh theo một nửa của độ rộng */
-    }
-
-    .hexagon:before {
-        bottom: 100%;
-        border-bottom: 93px solid #fff;
-        /* Chiều cao của tam giác phía trên */
-    }
-
-    .hexagon:after {
-        top: 100%;
-        border-top: 93px solid #fff;
-        /* Chiều cao của tam giác phía dưới */
-    }
-
-
-    .hexagon_bg {
-        width: 346px;
-        /* Độ rộng của hình lục giác */
-        height: 296px;
-        /* Độ cao của phần giữa */
-        background-color: #fff;
-        position: relative;
-    }
-
-    .hexagon_bg:before,
-    .hexagon_bg:after {
-        content: "";
-        position: absolute;
-        width: 0;
-        border-left: 172px solid transparent;
-        /* Điều chỉnh theo một nửa của độ rộng */
-        border-right: 172px solid transparent;
-        /* Điều chỉnh theo một nửa của độ rộng */
-    }
-
-    .hexagon_bg:before {
-        bottom: 100%;
-        border-bottom: 93px solid #fff;
-        /* Chiều cao của tam giác phía trên */
-    }
-
-    .hexagon_bg:after {
-        top: 100%;
-        border-top: 93px solid #fff;
-        /* Chiều cao của tam giác phía dưới */
-    }
-
-    .core_title_1 {
-        font-size: 24.834px;
-        margin-bottom: 12px;
-    }
-
-    .core_title_2 {
-        font-size: 19.867px;
-        padding: 0;
-        padding-left: 25px;
-        padding-right: 25px;
-    }
-
-    .hex {
-        margin-top: 120px;
     }
 
     .footer_div_logo {
