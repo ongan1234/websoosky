@@ -1390,6 +1390,67 @@ body {
     justify-content: space-around;
 }
 
+@media (max-width: 1440px) {
+    .core_web {
+        display: none;
+    }
+
+    .core_mobile {
+        display: flex;
+    }
+
+    .hexagon {
+        width: 286px;
+        /* Độ rộng của hình lục giác */
+        height: 200px;
+        /* Độ cao của phần giữa */
+        background-color: #fff;
+        position: relative;
+        flex-shrink: 0;
+        filter: drop-shadow(0px 2px 20px rgba(27, 35, 64, 0.25));
+
+    }
+
+    .hexagon:before,
+    .hexagon:after {
+        content: "";
+        position: absolute;
+        width: 0;
+        border-left: 143px solid transparent;
+        /* Điều chỉnh theo một nửa của độ rộng */
+        border-right: 143px solid transparent;
+        /* Điều chỉnh theo một nửa của độ rộng */
+    }
+
+    .hexagon:before {
+        bottom: 100%;
+        border-bottom: 93px solid #fff;
+        /* Chiều cao của tam giác phía trên */
+    }
+
+    .hexagon:after {
+        top: 100%;
+        border-top: 93px solid #fff;
+        /* Chiều cao của tam giác phía dưới */
+    }
+
+    .core_title_1 {
+        font-size: 24.834px;
+        margin-bottom: 12px;
+    }
+
+    .core_title_2 {
+        font-size: 19.867px;
+        padding: 0;
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    .hex {
+        margin-top: 120px;
+    }
+}
+
 @media (max-width: 1024px) {
     .about_title {
         font-size: 50px;
