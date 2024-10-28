@@ -1122,7 +1122,9 @@ body {
 }
 
 
-
+.core_web {
+    margin-top: 200px;
+}
 
 .font_Roboto {
     font-family: Roboto;
@@ -1776,4 +1778,8 @@ body {
     .hex {
         margin-top: 80px;
     }
+}
+
+.our_core_title {
+    margin-bottom: 200px;
 }
