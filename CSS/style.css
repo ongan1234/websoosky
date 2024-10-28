@@ -834,7 +834,7 @@ body {
     line-height: normal;
 }
 
-.nav-link {
+.nav-item .nav-link {
     color: #FFF;
     font-family: Roboto;
     font-size: 20px;
