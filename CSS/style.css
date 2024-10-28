@@ -978,19 +978,20 @@ body {
 
     .product_img {
         position: relative;
+        height: 650px;
     }
 
     .product_img_1 {
-        width: 336px;
-        height: 726px;
+        width: 70%;
+        height: 600px;
         position: absolute;
         bottom: 0;
         left: -10;
     }
 
     .product_img_2 {
-        width: 336px;
-        height: 726px;
+        width: 70%;
+        height: 600px;
         position: absolute;
         top: 0;
         right: -10;
@@ -1208,16 +1209,16 @@ body {
 
     .product_img_1 {
         position: absolute;
-        width: 185.4px;
-        height: 401.7px;
+        width: 70%;
+        height: 451.7px;
         bottom: 0;
         left: -10;
     }
 
     .product_img_2 {
         position: absolute;
-        width: 185.4px;
-        height: 401.7px;
+        width: 70%;
+        height: 451.7px;
         top: 0;
         right: -10;
     }
