@@ -377,8 +377,8 @@ body {
     }
 
     .product_logo {
-        width: 243.638px;
-        height: 157.421px;
+        width: 70%;
+        height: 40%;
     }
 
     .information-footer {
@@ -733,7 +733,7 @@ body {
 .product_img_1 {
     position: absolute;
     width: 70%;
-    height: auto;
+    height: 90%;
     bottom: 0;
     left: -10;
 }
@@ -741,7 +741,7 @@ body {
 .product_img_2 {
     position: absolute;
     width: 70%;
-    height: auto;
+    height: 90%;
     top: 0;
     right: -10;
 }
@@ -1007,6 +1007,28 @@ body {
 }
 
 @media (max-width: 1440px) {
+    .product_title_1 {
+        font-size: 35px;
+    }
+
+    .footer_div_logo {
+        display: block;
+    }
+
+    .ft_link {
+        width: 100%;
+    }
+
+    .ft_lg {
+        width: 100%;
+        padding-bottom: 70px;
+    }
+
+    .item-footer-3 {
+        padding-top: 60px;
+        width: 100%;
+    }
+
     .product_img {
         height: 550px;
     }
@@ -1069,6 +1091,18 @@ body {
     .hex {
         margin-top: 120px;
     }
+
+
+}
+
+@media (max-width: 1199px) {
+    /* .product_img_1 {
+        height: 90%;
+    }
+
+    .product_img_2 {
+        height: ;
+    } */
 }
 
 @media (max-width: 1024px) {
@@ -1259,13 +1293,13 @@ body {
     }
 
     .about_title {
-        font-size: 50px;
+        font-size: 48px;
         width: 90%;
         padding-right: 10px;
     }
 
     .about_title_1 {
-        font-size: 50px;
+        font-size: 48px;
     }
 
     .about_title_text {
@@ -1389,7 +1423,7 @@ body {
 
     .product_img_1 {
         width: 70%;
-        height: 600px;
+        height: 90%;
         position: absolute;
         bottom: 0;
         left: -10;
@@ -1397,7 +1431,7 @@ body {
 
     .product_img_2 {
         width: 70%;
-        height: 600px;
+        height: 90%;
         position: absolute;
         top: 0;
         right: -10;
@@ -1702,7 +1736,7 @@ body {
     .product_img_1 {
         position: absolute;
         width: 70%;
-        height: 451.7px;
+        height: 90%;
         bottom: 0;
         left: -10;
     }
@@ -1710,7 +1744,7 @@ body {
     .product_img_2 {
         position: absolute;
         width: 70%;
-        height: 451.7px;
+        height: 90%;
         top: 0;
         right: -10;
     }
