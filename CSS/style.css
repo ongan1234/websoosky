@@ -1254,6 +1254,10 @@ body {
 }
 
 @media (max-width: 768px) {
+    .our_core {
+        margin-top: 0px;
+    }
+
     .about_title {
         font-size: 50px;
         width: 90%;
@@ -1528,6 +1532,10 @@ body {
 
     .product_img {
         height: 500px;
+    }
+
+    .our_core {
+        margin-top: 10px;
     }
 }
 
