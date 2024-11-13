@@ -7293,6 +7293,19 @@
     }
   </script>
 
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+      // Lấy tham số email từ URL
+      const urlParams = new URLSearchParams(window.location.search);
+      const email = urlParams.get('email');
+      
+      // Nếu có email trong URL, điền vào input
+      if (email) {
+          document.getElementById("email").value = email;
+      }
+  });
+  </script>
+
 </body>
 
 </html>
