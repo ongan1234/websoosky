@@ -1232,7 +1232,7 @@ body {
 }
 
 .btn_submit {
-    
+
     width: 100%;
     height: 100%;
     text-align: center;
@@ -1246,7 +1246,23 @@ body {
     border: none;
 }
 
-
+.feature_btn_request {
+    display: inline-block;
+    margin-top: 5%;
+    color: #FFF;
+    text-align: center;
+    font-family: Roboto;
+    text-decoration: none;
+    font-size: clamp(10px, 2vw, 24px);
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    background-color: #12195E;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
 
 .success_term {
     margin-top: 2%;
@@ -1483,9 +1499,15 @@ body {
 }
 
 @media (max-width: 1024px) {
-    main {
-        margin-left: 9%;
-        margin-right: 9%;
+
+    .banner_container,
+    .preview_container,
+    .feature_container,
+    .transform_container,
+    .success_container,
+    .meet_container {
+        padding-left: 9%;
+        padding-right: 9%;
     }
 
     .number {
@@ -2105,7 +2127,7 @@ body {
 
     .success_img_web {
         display: none;
-        
+
     }
 
     .success_img_mobile {
