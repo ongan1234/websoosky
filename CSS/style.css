@@ -853,7 +853,9 @@ body {
 
 
 
-
+body {
+    background-color: #FAFAFA !important;
+}
 
 .core_web {
     margin-top: 200px;
@@ -1444,7 +1446,7 @@ body {
     }
 
     .preview_container {
-        padding-top: 120px;
+        padding-top: 10%;
     }
 
     .preview_img {
