@@ -970,10 +970,10 @@ body {
     line-height: normal;
     text-decoration: none;
     margin-top: 5%;
-    padding-top: 1%;
-    padding-bottom: 1%;
-    padding-left: 1%;
-    padding-right: 1%;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    padding-top: 1.5%;
+    padding-bottom: 1.5%;
     background-color: #fff;
 }
 
@@ -1260,10 +1260,10 @@ body {
     font-weight: 600;
     line-height: normal;
     background-color: #12195E;
-    padding-left: 2%;
-    padding-right: 2%;
-    padding-top: 1%;
-    padding-bottom: 1%;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    padding-top: 1.5%;
+    padding-bottom: 1.5%;
 }
 
 .success_term {
